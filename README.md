@@ -16,6 +16,65 @@ Solo es el directorio de imagenes a usar en el sistema.
 ## MUI
 Mui es una librería de UI para react, tienen components preconstruidos que nosotros utilizamos para facilitar el desarrollo. Funciona muy similar a Boostrap [MUI documentación (Dar click en componentes)](https://mui.com/getting-started/usage/).
 
+# Pasos para agregar páginas nuevas
+
+## Crear Webpages
+
+En la ruta `src/webpages` creamoss un archivo nuevo. Por ejemplo: `About.js`  
+
+En este archivo nuevo importamos la librería de react y los componentes que queramos que tenga nuestra pagina de `about` y debería lucir algo como esto:
+
+```
+//file: src/webpages/About.js
+import React, { useEffect } from 'react';
+import Panel from '../components/Panel';
+
+const About = () => {
+    return (
+        <div>
+            <Panel titulo={"Página About"} />
+            <p>Esta es mi página de about</p>
+        </div>
+    );
+};
+export default About;
+
+```
+
+En esta webpage nueva, le estamos pasando el valor de: `Página About` a nuestro prop `titulo` del componente Panel.
+
+## Añadir props a un componente
+
+Si revisamos el componente `Panel.js` nos podemos dar cuenta como definimos que props tendrá este componente 
+
+```
+//file: src/components/Panel.js
+
+...
+export default function Panel(props) {
+  const { titulo="Sin título", subtitulo="" } = props;
+
+    return (
+...
+
+```
+
+Como podemos ver, el prop de titulo se inicializa como: `titulo="Sin título",` ya que si nosotros en nuestra webpage no le enviamos ningún valor, este desplegará su valor por defecto, el cual es: `"Sin título"`
+
+## Añadir la ruta
+Para que nuestra nueva webpage sea visible en nuestro sistema, debemos añadirla a las routes de React, para hacer esto nos dirigimos a `src/webpages/index.js`  
+
+Primero se deberá importar el componente al inicio del archivo:
+
+```
+import About from './About';
+```
+
+Más adelante agregamos la siguiente línea dentro de la etiqueta `<Layout></Layout>`
+```
+<Route path="/about" component={About} />
+```
+Y eso es todo, al correr la aplicación,  nuestra página `About` deberá ser visible desde la ruta: `http://localhost:3000/About`
 
 # Getting Started with Create React App
 
