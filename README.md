@@ -1,12 +1,39 @@
+# Explicación de directorio
+
+## Directorio SRC
+Este directorio cuenta con todos los archivos a modificar y se dividen en 3 subdirectorios **¡¡Hasta ahora!!**
+
+### `Components`
+Los componentes son pedazos de codigo reutilizables que se ocupan en el sistema, una página puede contar con multiples components, y mediante los "props" se le pueden pasar información a desplegar
+
+### `Webpages`
+Aquí es donde se crean todas las páginas que vaya a a tener el sistema (Home, About, Faq, etc.)
+Cada página puede estar formada de distintos components, aqui se le mandan los props a desplegar de cada component.
+
+### `Images`
+Solo es el directorio de imagenes a usar en el sistema.
+
+## MUI
+Mui es una librería de UI para react, tienen components preconstruidos que nosotros utilizamos para facilitar el desarrollo. Funciona muy similar a Boostrap [MUI documentación (Dar click en componentes)](https://mui.com/getting-started/usage/).
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+En el directorio del proyecto, pueden correr los siguientes scripts.
 
-### `npm start`
+Los dos primeros scripts son necesarios para comenzar con el desarrollo
+
+
+### **`npm install`**
+
+Despues de clonar el repositorio no se les olvide correr el siguiente comando para instalar todas las dependencias necesarias:
+
+
+### **`npm start`**
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
