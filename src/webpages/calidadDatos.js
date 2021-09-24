@@ -9,8 +9,8 @@ const Home = () => {
     return (
         <div>
             <BreadCrumb />
-            <Panel titulo={"Mesa de ayuda"} />
-            <Description descripcion={"Consulta las dudas más frecuentes sobre el desarrollo y construcción de la PDN, además encontrarás preguntas y respuestas sobre los datos que conforman la PDN así como un correo electrónico de apoyo en caso de no haber solucionado tus dudas."} />
+            <Panel titulo={"Evaluación de la calidad de los datos"} />
+            <Description descripcion={"En esta sección encontrarás una metodología que proponemos para evaluar la calidad de Datos Abiertos. Con esta metodología se evaluaron los 44 conjuntos de datos de la Guía de Apertura Anticorrupción."} />
             <Accordion />
         </div>
     );

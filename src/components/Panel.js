@@ -6,7 +6,7 @@ import { Typography } from '@mui/material';
 import Image from '../images/descarga.png'; // Import using relative path
 
 export default function Panel(props) {
-  const { titulo="Sin título" } = props;
+  const { titulo="Sin título", subtitulo="" } = props;
 
     return (
       <Box sx={{ bgcolor: 'orange'}} >
@@ -27,6 +27,15 @@ export default function Panel(props) {
               }}
           >
               {titulo}
+          </Typography>
+          <Typography 
+              variant="h5" 
+              component="h4"
+              sx={{
+                  textAlign: 'center'
+              }}
+          >
+              {subtitulo}
           </Typography>
 
         </Box>

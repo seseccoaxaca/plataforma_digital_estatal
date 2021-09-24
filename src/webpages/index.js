@@ -13,6 +13,8 @@ import Home from './home';
 import MyBooks from './mybooks';
 import Favorites from './favorites';
 import MesaAyuda from './mesaAyuda';
+import CalidadDatos from './calidadDatos';
+import Especificaciones from './especificaciones';
 const Webpages = () => {
     return (
         <Router>
@@ -21,6 +23,8 @@ const Webpages = () => {
                 <Route path="/mybooks" component={MyBooks} />
                 <Route path="/favorites" component={Favorites} />
                 <Route path="/mesa-ayuda" component={MesaAyuda} />
+                <Route path="/calidad-datos" component={CalidadDatos} />
+                <Route path="/especificaciones" component={Especificaciones} />
             </Layout>
         </Router>
     );
