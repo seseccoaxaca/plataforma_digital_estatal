@@ -7,6 +7,7 @@ const Home = () => {
         <div>
             {/* <Navigation /> */}
             <p>Este es el home</p>
+            
         </div>
     );
 };
