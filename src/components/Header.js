@@ -86,7 +86,7 @@ export default function MenuAppBar() {
 
                 <MenuItem onClick={handleClose}>Blog</MenuItem>
                 <MenuItem onClick={handleClose}>Especificaciones</MenuItem>
-                <MenuItem onClick={handleClose}>Interconexión subnacional</MenuItem>
+                <MenuItem onClick={handleClose}>Iniciar Sesión</MenuItem>
               </Menu>
             </div>
           )}
