@@ -9,7 +9,7 @@ export default function Panel(props) {
   const { titulo="Sin título", subtitulo="" } = props;
 
     return (
-      <Box sx={{ bgcolor: 'orange'}} >
+      <Box sx={{ bgcolor: '#E2E2E2'}} >
         <Box
           sx={{
             width: '100vw',

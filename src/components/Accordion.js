@@ -12,7 +12,7 @@ export default function ControlledAccordions(props) {
     };
 
     return (
-        <Box sx={{ bgcolor: '#cfe8fc' }} >
+        <Box sx={{ bgcolor: '#fff' }} >
             <Container sx={{ py: '2vh' }} >
                 {data.map(accordion => {
                     const { id, heading, details } = accordion;

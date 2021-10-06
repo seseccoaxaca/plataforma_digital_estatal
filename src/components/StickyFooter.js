@@ -5,7 +5,7 @@ import { Box, Link, Typography, Container } from '@mui/material';
 
 function Copyright() {
     return (
-      <Typography variant="body2" color="text.secondary">
+      <Typography variant="body2" color="white">
         {'Copyright © '}
         <Link color="inherit" href="#">
           PDE
@@ -26,17 +26,15 @@ export default function StickyFooter() {
                 px: 2,
                 mt: 'auto',
                 textAlign: 'center',
-                backgroundColor: (theme) =>
-                theme.palette.mode === 'light'
-                    ? theme.palette.grey[200]
-                    : theme.palette.grey[800],
+                backgroundColor: "#0B1D1F",
+                color:"white"
             }}
             >
             <Container>
                 <Typography variant="body1">
                 Plataforma Digital Estatal.
                 </Typography>
-                <Copyright />
+                <Copyright/>
             </Container>
         </Box>
     );

@@ -25,9 +25,9 @@ const Home = () => {
             </ul>
             <br/>
             <p>Es importante señalar que la PDN no es un repositorio ni generadora de los datos de cada sistema, sino que es una plataforma de interoperabilidad.</p>
-                <Button variant="contained" sx={{ mx:1 }}>¿QUÉ ES LA PDN?</Button>
-                <Button variant="contained" sx={{ mx:1 }}>¿CÓMO SE CONTRUYE?</Button>
-                <Button variant="contained" sx={{ mx:1 }}>¿GUÍA DESARROLLO PDE?</Button>
+                <Button variant="contained" sx={{ mx:1, backgroundColor:"#FEA142" }}>¿QUÉ ES LA PDN?</Button>
+                <Button variant="contained" sx={{ mx:1, backgroundColor:"#FEA142" }}>¿CÓMO SE CONTRUYE?</Button>
+                <Button variant="contained" sx={{ mx:1, backgroundColor:"#FEA142" }}>¿GUÍA DESARROLLO PDE?</Button>
         </div>
     );
 
