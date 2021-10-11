@@ -1,7 +1,8 @@
 //file: src/webpages/home.js
 import React from 'react';
 import BreadCrumb from '../components/BreadCrumb';
-import Panel from '../components/Panel';
+// import Panel from '../components/Panel';
+import Hero from '../components/HeroPages';
 import Description from '../components/Description';
 
 const Home = () => {
@@ -23,10 +24,12 @@ const Home = () => {
     return (
         <div>
             <BreadCrumb />
-            <Panel 
+            <Hero 
                 titulo={"Especificaciones técnicas"} 
                 subtitulo={"Encontrarás las reglas y características con las que deben contar los datos para la interoperabilidad"} 
+                link="https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
             />
+            
             <Description descripcion={descripcion} />
         </div>
     );
