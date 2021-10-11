@@ -1,7 +1,7 @@
 //file: src/webpages/home.js
 import React from 'react';
 import BreadCrumb from '../components/BreadCrumb';
-import Panel from '../components/Panel';
+import Hero from '../components/HeroPages';
 import Description from '../components/Description';
 import Accordion from '../components/Accordion';
 import { Button  } from '@mui/material';
@@ -105,7 +105,8 @@ const Home = () => {
     return (
         <div>
             <BreadCrumb />
-            <Panel titulo={"Mesa de ayuda"} />
+            <Hero titulo="Mesa de ayuda" link="https://images.pexels.com/photos/6476254/pexels-photo-6476254.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+            {/* <Panel titulo={"Mesa de ayuda"} /> */}
             <Description descripcion={"Consulta las dudas más frecuentes sobre el desarrollo y construcción de la PDN, además encontrarás preguntas y respuestas sobre los datos que conforman la PDN así como un correo electrónico de apoyo en caso de no haber solucionado tus dudas."} />
             <Accordion data={data} />
         </div>
