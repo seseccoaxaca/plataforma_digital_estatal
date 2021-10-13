@@ -42,7 +42,7 @@ export default function AlertDialogSlide() {
             Esta es la versión 1.0 de la Plataforma Digital Estatal (PDE), lo cual significa que:
             <br/>
             <ul>
-              <li>Contiene datos reales de los Sistemas: 1, 2, 4. </li>
+              <li>Contiene datos reales de los Sistemas: 2 y 4. </li>
               <br/>
               <li>Contiene nuevas secciones y funcionalidades.</li>
               <br/>
