@@ -20,7 +20,7 @@ const Home = () => {
                 link="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                 titulo="Inteligencia anticorrupción con datos" 
             />
-            <Box bgcolor="#46AAA6">
+            <Box bgcolor="#E2E2E2">
                 <GridB />
             </Box>
             <Box>
