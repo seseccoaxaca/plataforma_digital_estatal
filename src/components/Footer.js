@@ -6,16 +6,21 @@ import { CssBaseline, GlobalStyles, Grid, Link, Typography, Container } from '@m
 export default function Footer() {
     const footers = [
         
+        // {
+        //     title: 'Sistemas',
+        //     description: [
+        //         'Plataforma Digital Nacional',
+        //         'Inteligencia de datos Anticorrupción'
+        //     ],
+        // },
+        
         {
-            title: 'Lateral',
-            description: [
-                'Plataforma Digital Nacional',
-                'Inteligencia de datos Anticorrupción'
-            ],
+            title: 'Sistemas',
+            description: ['Declaraciones', 'Servidores en contrataciones', 'Catálogos de empresas', 'Sancionados', 'Información y comunicación'],
         },
         {
             title: 'Sistemas',
-            description: ['Declaraciones', 'Servidores en contrataciones', 'Sancionados', 'Contrataciones'],
+            description: ['Denuncias públicas','Contrataciones','Seguimiento','Indicadores'],
         },
         {
             title: 'PDE',
@@ -45,9 +50,9 @@ export default function Footer() {
                     <ul>
                     {footer.description.map((item) => (
                         <li key={item}>
-                        <Link href="#" variant="subtitle1" color="text.secondary">
-                            {item}
-                        </Link>
+                            <Link href={item} variant="subtitle1" color="text.secondary">
+                                {item}
+                            </Link>
                         </li>
                     ))}
                     </ul>

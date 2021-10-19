@@ -4,12 +4,11 @@ import BreadCrumb from '../components/BreadCrumb';
 import Hero from '../components/HeroPages';
 import Description from '../components/Description';
 import Accordion from '../components/Accordion';
-import { Button  } from '@mui/material';
 
 const Home = () => {
     const linkPDN = (
         <div>
-            <a href="https://www.plataformadigitalnacional.org/" target="_blank">https://www.plataformadigitalnacional.org/</a>
+            <a href="https://www.plataformadigitalnacional.org/" rel="noreferrer" target="_blank">https://www.plataformadigitalnacional.org/</a>
         </div>
     );
 
