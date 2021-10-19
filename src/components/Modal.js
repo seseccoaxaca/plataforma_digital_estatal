@@ -7,7 +7,10 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 
+import { useCookies } from 'react-cookie';
+
 import "./modal.css";
+
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;
@@ -16,6 +19,10 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 export default function AlertDialogSlide() {
   const [open, setOpen] = React.useState(true);
 
+  // const [cookies, setCookie] = useCookies(["modal"]);
+  const [cookies, setCookie] = useCookies(["modal"]);
+
+
   // const handleClickOpen = () => {
   //   setOpen(true);
   // };
@@ -23,6 +30,12 @@ export default function AlertDialogSlide() {
   const handleClose = () => {
     setOpen(false);
   };
+
+  function handleCookie(){
+      setCookie("modal", "activo", { path: '/' });
+      handleClose();
+  };
+
 
   return (
     <div>
@@ -74,7 +87,7 @@ export default function AlertDialogSlide() {
 
           >Terminos</Button>
           <Button
-            onClick={handleClose}
+            onClick={handleCookie}
             autoFocus
             sx={{
               width: '150px',
@@ -87,7 +100,6 @@ export default function AlertDialogSlide() {
               fontSize: '20px',
               cursor: 'pointer',
             }}
-
           >
             Aceptar
           </Button>
