@@ -13,8 +13,15 @@ import {
 import Home from './home';
 import MesaAyuda from './mesaAyuda';
 import CalidadDatos from './calidadDatos';
-import Especificaciones from './especificaciones';
-import Login from './login';
+import s1 from './sistemas/s1Declaraciones';
+import s2 from './sistemas/s2ServidoresContrataciones';
+import s3 from './sistemas/s3CatalogoDeEmpresas';
+import s4 from './sistemas/s4Sancionados';
+import s5 from './sistemas/s5InformacionComunicacion';
+import s6 from './sistemas/s6DenunciasPublicas';
+import s7 from './sistemas/s7Contrataciones';
+import s8 from './sistemas/s8Seguimiento';
+import s9 from './sistemas/s9Indicadores';
 
 const Webpages = () => {
     return (
@@ -23,6 +30,15 @@ const Webpages = () => {
                 <Route exact path="/" component={Home} />
                 <Route path="/mesa-ayuda" component={MesaAyuda} />
                 <Route path="/calidad-datos" component={CalidadDatos} />
+                <Route path="/declaraciones" component={s1} />
+                <Route path="/servidores" component={s2} />
+                <Route path="/catalogo" component={s3} />
+                <Route path="/sancionados" component={s4} />
+                <Route path="/info-comunicacion" component={s5} />
+                <Route path="/denuncias" component={s6} />
+                <Route path="/contrataciones" component={s7} />
+                <Route path="/seguimiento" component={s8} />
+                <Route path="/indicadores" component={s9} />
             </Layout>
         </Router>
     );

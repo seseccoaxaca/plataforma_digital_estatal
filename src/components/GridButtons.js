@@ -36,63 +36,63 @@ export default function BasicGrid() {
           alignItems="center"
           justifyContent="center">
           <Item>
-            <Link href="#" underline="none" color="#fff" >
+            <Link href="/declaraciones" underline="none" color="#fff" >
             S1 Declaraciones
             </Link>
           </Item>
         </Grid>
         <Grid item xs={6}>
           <Item>
-            <Link href="#" underline="none" color="#fff" >
+            <Link href="/servidores" underline="none" color="#fff" >
             S2 Publicos & Particulares en contrataciones
             </Link>
           </Item>
         </Grid>
         <Grid item xs={6}>
           <Item>
-            <Link href="#" underline="none" color="#fff">
+            <Link href="/catalogo" underline="none" color="#fff">
             S3 Catálogo de empresas
             </Link>
           </Item>
         </Grid>
         <Grid item xs={3}>
           <Item>
-            <Link href="#" underline="none" color="#fff">
+            <Link href="/sancionados" underline="none" color="#fff">
             S4 Sancionados
             </Link>
           </Item>
         </Grid>
         <Grid item xs={3}>
           <Item>
-            <Link href="#" underline="none" color="#fff">
+            <Link href="/info-comunicacion" underline="none" color="#fff">
             S5 Información & Comunicación
             </Link>
           </Item>
         </Grid>
         <Grid item xs={3}>
           <Item>
-            <Link href="#" underline="none" color="#fff">
+            <Link href="/denuncias" underline="none" color="#fff">
             S6 Denuncias públicas
             </Link>
           </Item>
         </Grid>
         <Grid item xs={3}>
           <Item>
-            <Link href="#" underline="none" color="#fff">
+            <Link href="/contrataciones" underline="none" color="#fff">
             S7 Contrataciones
             </Link>
           </Item>
         </Grid>
         <Grid item xs={6}>
           <Item>
-            <Link href="#" underline="none" color="#fff">
+            <Link href="/seguimiento" underline="none" color="#fff">
               S8 Seguimiento
             </Link>
           </Item>
         </Grid>
         <Grid item xs={6}>
           <Item>
-            <Link href="#" underline="none" color="#fff">
+            <Link href="/indicadores" underline="none" color="#fff">
               S9 Indicadores
             </Link>
           </Item>
