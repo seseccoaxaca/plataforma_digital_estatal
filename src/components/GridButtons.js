@@ -37,63 +37,63 @@ export default function BasicGrid() {
           justifyContent="center">
           <Item>
             <Link href="#" underline="none" color="#fff" >
-              1.- Declaraciones
+            S1 Declaraciones
             </Link>
           </Item>
         </Grid>
         <Grid item xs={6}>
           <Item>
             <Link href="#" underline="none" color="#fff" >
-              2.- Servidores públicos en contrataciones
+            S2 Publicos & Particulares en contrataciones
             </Link>
           </Item>
         </Grid>
         <Grid item xs={6}>
           <Item>
             <Link href="#" underline="none" color="#fff">
-              3.- Sancionados
+            S3 Catálogo de empresas
             </Link>
           </Item>
         </Grid>
         <Grid item xs={3}>
           <Item>
             <Link href="#" underline="none" color="#fff">
-              4.- Fiscalización
+            S4 Sancionados
             </Link>
           </Item>
         </Grid>
         <Grid item xs={3}>
           <Item>
             <Link href="#" underline="none" color="#fff">
-              5.- Denuncias
+            S5 Información & Comunicación
             </Link>
           </Item>
         </Grid>
         <Grid item xs={3}>
           <Item>
             <Link href="#" underline="none" color="#fff">
-              5.- Denuncias
+            S6 Denuncias públicas
             </Link>
           </Item>
         </Grid>
         <Grid item xs={3}>
           <Item>
             <Link href="#" underline="none" color="#fff">
-              5.- Denuncias
+            S7 Contrataciones
             </Link>
           </Item>
         </Grid>
         <Grid item xs={6}>
           <Item>
             <Link href="#" underline="none" color="#fff">
-              5.- Denuncias
+              S8 Seguimiento
             </Link>
           </Item>
         </Grid>
         <Grid item xs={6}>
           <Item>
             <Link href="#" underline="none" color="#fff">
-              5.- Denuncias
+              S9 Indicadores
             </Link>
           </Item>
         </Grid>
