@@ -1,0 +1,1688 @@
+[
+    {
+        "_id": {
+            "$oid": "60c3c39da71ede001a298c7c"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "ABEL",
+        "primerApellido": "MONJARAS",
+        "segundoApellido": "CRUZ",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "JEFE DE OFICIA"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-11T20:12:13+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c3c3daa71ede001a298c7f"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "ABRAHAM",
+        "primerApellido": "GONZÁLEZ",
+        "segundoApellido": "RAMÍREZ",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "DIRECTOR ADMINISTRATIVO"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-11T20:13:14+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c77547a71ede001a298c82"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "ALBERTO",
+        "primerApellido": "SANTIAGO",
+        "segundoApellido": "MENDEZ",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "AUDITOR"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-14T15:27:03+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c77592a71ede001a298c85"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "ANADAIRA",
+        "primerApellido": "BUSTAMANTE",
+        "segundoApellido": "SALINAS",
+        "genero": {
+            "clave": "F",
+            "valor": "FEMENINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "JEFA DE OFICINA"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-14T15:28:18+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c775e7a71ede001a298c88"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "BERTHA FLORENCIA",
+        "primerApellido": "LUNA",
+        "segundoApellido": "CASTELLANOS",
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "JEFA DEL DEPARTAMENTO"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-14T15:29:43+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c77752a71ede001a298c8b"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "CLAUDIA LISBET ",
+        "primerApellido": "CAMARILLO",
+        "segundoApellido": "CANSECO",
+        "genero": {
+            "clave": "F",
+            "valor": "FEMENINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "SUPERVISOR"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-14T15:35:46+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c777b0a71ede001a298c8e"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "CRISMA VIANEY",
+        "primerApellido": "LÓPEZ",
+        "segundoApellido": "BENÍTEZ",
+        "genero": {
+            "clave": "F",
+            "valor": "FEMENINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "ASESOR ESPECIALIZADO"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-14T15:37:20+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c777eaa71ede001a298c91"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "CRUZ SAYMA",
+        "primerApellido": "AMADOR",
+        "segundoApellido": "MARTÍNEZ",
+        "genero": {
+            "clave": "F",
+            "valor": "FEMENINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "ANALISTA"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-14T15:38:18+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c77854a71ede001a298c94"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "ELIZABETH YOLANDA",
+        "primerApellido": "SÁNCHEZ",
+        "segundoApellido": "QUINTAS",
+        "genero": {
+            "clave": "F",
+            "valor": "FEMENINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "JEFE DE OFICINA"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-14T15:40:04+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c79ee6a71ede001a298c9b"
+        },
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "PRESIDENTE DEL CJO",
+                "nivel": "25A"
+            },
+            "rfc": "PISE590510LU8",
+            "curp": "PISE590510HOCNNDO1",
+            "nombres": "EDUARDO",
+            "primerApellido": "PINACHO",
+            "segundoApellido": "SANCHEZ"
+        },
+        "ejercicioFiscal": "2020",
+        "rfc": "TECG510223JW7",
+        "curp": "TECG510223HDFRRL06",
+        "nombres": "GUILLERMO",
+        "primerApellido": "TREJO",
+        "segundoApellido": "CARBAJAL",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "PODER JUDICIAL DEL ESTADO DE OAXACA CONS DE LA JUD",
+            "clave": "301PJEOCJ",
+            "siglas": "CJO"
+        },
+        "puesto": {
+            "nombre": "DIRECT DE ADMINISTRACION",
+            "nivel": "21C"
+        },
+        "tipoArea": [
+            {
+                "clave": "RC",
+                "valor": "RESPONSABLE DE LA CONTRATACIÓN"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "nivelResponsabilidad": [
+            {
+                "clave": "R",
+                "valor": "RESOLUCIÓN"
+            }
+        ],
+        "fechaCaptura": "2021-06-14T18:24:38+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c7a18da71ede001a298ca1"
+        },
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "PRESIDENTE DEL CJO",
+                "nivel": "25A"
+            },
+            "rfc": "PISE590510LU8",
+            "curp": "PISE590510HOCNNDO1",
+            "nombres": "EDUARDO",
+            "primerApellido": "PINACHO",
+            "segundoApellido": "SANCHEZ"
+        },
+        "ejercicioFiscal": "2020",
+        "rfc": "PAAA6011108KA",
+        "curp": "PAAA601110HOCCGN09",
+        "nombres": "ANDRES",
+        "primerApellido": "PACHECO",
+        "segundoApellido": "AGUILAR",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "PODER JUDICIAL DEL ESTADO DE OAXACA CONS DE LA JUD",
+            "clave": "301PJEOCJ",
+            "siglas": "CJO"
+        },
+        "puesto": {
+            "nombre": "DIRETOR DE FINANZAS",
+            "nivel": "21C"
+        },
+        "tipoArea": [
+            {
+                "clave": "RC",
+                "valor": "RESPONSABLE DE LA CONTRATACIÓN"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "nivelResponsabilidad": [
+            {
+                "clave": "R",
+                "valor": "RESOLUCIÓN"
+            }
+        ],
+        "fechaCaptura": "2021-06-14T18:35:57+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c7a43ca71ede001a298ca4"
+        },
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "PRESIDENTE DEL CJO",
+                "nivel": "25A"
+            },
+            "rfc": "PISE590510LU8",
+            "curp": "PISE590510HOCNNDO1",
+            "nombres": "EDUARDO",
+            "primerApellido": "PINACHO",
+            "segundoApellido": "SANCHEZ"
+        },
+        "ejercicioFiscal": "2020",
+        "rfc": "COVT7010163D1",
+        "curp": "COVT701016HDFRZR08",
+        "nombres": "TRINIDAD",
+        "primerApellido": "CORONEL",
+        "segundoApellido": "VASQUEZ",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "PODER JUDICIAL DEL ESTADO DE OAXACA CONS DE LA JUD",
+            "clave": "301PJEOCJ",
+            "siglas": "CJO"
+        },
+        "puesto": {
+            "nombre": "DIRECT DE CONTRALORIA INT",
+            "nivel": "21C"
+        },
+        "tipoArea": [
+            {
+                "clave": "RC",
+                "valor": "RESPONSABLE DE LA CONTRATACIÓN"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "nivelResponsabilidad": [
+            {
+                "clave": "R",
+                "valor": "RESOLUCIÓN"
+            }
+        ],
+        "fechaCaptura": "2021-06-14T18:47:24+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c7a66ca71ede001a298ca7"
+        },
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "DIRECT DE ADMINISTRACION",
+                "nivel": "21C"
+            },
+            "rfc": "TECG510223JW7",
+            "curp": "TECG510223HDFRRL06",
+            "nombres": "GUILLERMO",
+            "primerApellido": "TREJO",
+            "segundoApellido": "CARBAJAL"
+        },
+        "ejercicioFiscal": "2020",
+        "rfc": "HEVL870702LM7",
+        "curp": "HEVL870702MOCRLD05",
+        "nombres": "LADY MAYREL",
+        "primerApellido": "HERNANDEZ",
+        "segundoApellido": "VELASCO",
+        "genero": {
+            "clave": "F",
+            "valor": "FEMENINO"
+        },
+        "institucionDependencia": {
+            "nombre": "PODER JUDICIAL DEL ESTADO DE OAXACA CONS DE LA JUD",
+            "clave": "301PJEOCJ",
+            "siglas": "CJO"
+        },
+        "puesto": {
+            "nombre": "JEFA DE ENLACE Y VINCULAC",
+            "nivel": "17A"
+        },
+        "tipoArea": [
+            {
+                "clave": "RC",
+                "valor": "RESPONSABLE DE LA CONTRATACIÓN"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "nivelResponsabilidad": [
+            {
+                "clave": "R",
+                "valor": "RESOLUCIÓN"
+            }
+        ],
+        "fechaCaptura": "2021-06-14T18:56:44+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c7a95fa71ede001a298cb1"
+        },
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "DIRECTOR DE FINANZAS",
+                "nivel": "21C"
+            },
+            "rfc": "PAAA6011108KA",
+            "curp": "PAAA601110HOCCGN09",
+            "nombres": "ANDRES",
+            "primerApellido": "PACHECO",
+            "segundoApellido": "AGUILAR"
+        },
+        "ejercicioFiscal": "2020",
+        "rfc": "GUFH601116222",
+        "curp": "GUFH601116HOCTLC06",
+        "nombres": "HECTOR",
+        "primerApellido": "GUTIERREZ",
+        "segundoApellido": "FLORES",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "PODER JUDICIAL DEL ESTADO DE OAXACA CONS DE LA JUD",
+            "clave": "301PJEOCJ",
+            "siglas": "CJO"
+        },
+        "puesto": {
+            "nombre": "JU CONTA Y REND CUENT PUB",
+            "nivel": "18A"
+        },
+        "tipoArea": [
+            {
+                "clave": "RC",
+                "valor": "RESPONSABLE DE LA CONTRATACIÓN"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "nivelResponsabilidad": [
+            {
+                "clave": "R",
+                "valor": "RESOLUCIÓN"
+            }
+        ],
+        "fechaCaptura": "2021-06-14T19:09:19+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c7a783a71ede001a298caa"
+        },
+        "__v": 0,
+        "curp": "HERM590608HOCRJX02",
+        "ejercicioFiscal": "2020",
+        "fechaCaptura": "2021-06-14T19:10:08+00:00",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "PODER JUDICIAL DEL ESTADO DE OAXACA CONS DE LA JUD",
+            "clave": "301PJEOCJ",
+            "siglas": "CJO"
+        },
+        "nivelResponsabilidad": [
+            {
+                "clave": "R",
+                "valor": "RESOLUCIÓN"
+            }
+        ],
+        "nombres": "MAXIMINO HERACLIO",
+        "primerApellido": "HERNANDEZ",
+        "puesto": {
+            "nombre": "JD DE PRESUPUESTACION",
+            "nivel": "17A"
+        },
+        "rfc": "HERM590608270",
+        "segundoApellido": "ROJAS",
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "DIRECT DE PLAN E INFORM",
+                "nivel": "21C"
+            },
+            "rfc": "GAZH631028398",
+            "curp": "GAZH631028MOCRRR05",
+            "nombres": "HERMELINDA",
+            "primerApellido": "GRACIDA",
+            "segundoApellido": "ZARATE"
+        },
+        "tipoArea": [
+            {
+                "clave": "RC",
+                "valor": "RESPONSABLE DE LA CONTRATACIÓN"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "60c7aacea71ede001a298cb8"
+        },
+        "__v": 0,
+        "curp": "PACJ730727HOCBSR00",
+        "ejercicioFiscal": "2020",
+        "fechaCaptura": "2021-06-14T19:16:09+00:00",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "PODER JUDICIAL DEL ESTADO DE OAXACA CONS DE LA JUD",
+            "clave": "301PJEOCJ",
+            "siglas": "CJO"
+        },
+        "nivelResponsabilidad": [
+            {
+                "clave": "R",
+                "valor": "RESOLUCIÓN"
+            }
+        ],
+        "nombres": "JORGE ",
+        "primerApellido": "PABLO",
+        "puesto": {
+            "nombre": "JEFE DE DEPARTAMENTO",
+            "nivel": "17A"
+        },
+        "rfc": "PACJ7307272Q5",
+        "segundoApellido": "CASTELLANOS",
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "DIRECT DE CONTRALORIA INT",
+                "nivel": "21C"
+            },
+            "rfc": "COVT7010163D1",
+            "curp": "COVT701016HDFRZR08",
+            "nombres": "TRINIDAD",
+            "primerApellido": "CORONEL",
+            "segundoApellido": "VASQUEZ"
+        },
+        "tipoArea": [
+            {
+                "clave": "RC",
+                "valor": "RESPONSABLE DE LA CONTRATACIÓN"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "60c8f349fbb09a001367e707"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "JOSÉ ÁNGEL ",
+        "primerApellido": "DIÁZ",
+        "segundoApellido": "NAVARRO",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "SECRETARIO"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-15T18:36:57+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c8f3d1fbb09a001367e70a"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "JOAQUÍN",
+        "primerApellido": "AVENDAÑO",
+        "segundoApellido": "GIJÓN",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "JEFE DE DEPARTAMENTO"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-15T18:39:13+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c8f51bfbb09a001367e70d"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "MARCO ANTONIO",
+        "primerApellido": "ESTRADA",
+        "segundoApellido": "AGUILAR",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "DIRECTOR JURÍDICO"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-15T18:44:43+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c8f589fbb09a001367e710"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "MAYRA JULIETA",
+        "primerApellido": "REYES",
+        "segundoApellido": "PÉREZ",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "JEFA DE DEPARTAMENTO"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-15T18:46:33+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c8f5d2fbb09a001367e713"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "RAQUEL",
+        "primerApellido": "CRUZ",
+        "segundoApellido": "AQUINO",
+        "genero": {
+            "clave": "F",
+            "valor": "FEMENINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "SUPERVISOR"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-15T18:47:46+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c8f610fbb09a001367e716"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "YAZENQUI",
+        "primerApellido": "HERNÁNDEZ",
+        "segundoApellido": "BAIZABAL",
+        "genero": {
+            "clave": "F",
+            "valor": "FEMENINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "ANALISTA"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-15T18:48:48+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c8f65bfbb09a001367e719"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "JUAN RODRIGO",
+        "primerApellido": "SÁNCHEZ",
+        "segundoApellido": "ROJAS",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "JEFE DE DEPARTAMENTO"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-15T18:50:03+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c8f754fbb09a001367e71c"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "LIZBETH",
+        "primerApellido": "MARIANO",
+        "segundoApellido": "AGUILAR",
+        "genero": {
+            "clave": "F",
+            "valor": "FEMENINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "JEFA DE OFICINA"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-15T18:54:12+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c8f794fbb09a001367e71f"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "JUAN JOSÉ",
+        "primerApellido": "DÍAZ",
+        "segundoApellido": "MORALES",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "JEFE DE DEPARTAMENTO"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-06-15T18:55:16+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60dc934afbb09a001367e732"
+        },
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "Comisionada Presidente",
+                "nivel": "Comisionado Presidente"
+            },
+            "nombres": "María Antonieta",
+            "primerApellido": "Velasquez",
+            "segundoApellido": "Chagoya"
+        },
+        "ejercicioFiscal": "2021",
+        "ramo": {
+            "clave": 28,
+            "valor": "PARTICIPACIONES A ENTIDADES FEDERATIVAS Y MUNICIPIOS"
+        },
+        "nombres": "Fernando",
+        "primerApellido": "Cruz",
+        "segundoApellido": "Rios",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "Instituto de Acceso a la Información Pública y Protección de Datos Personales",
+            "siglas": "IAIPOAXACA"
+        },
+        "puesto": {
+            "nombre": "Director de Administración",
+            "nivel": "Director"
+        },
+        "tipoArea": [
+            {
+                "clave": "C",
+                "valor": "CONTRATANTE"
+            },
+            {
+                "clave": "R",
+                "valor": "REQUIRENTE"
+            },
+            {
+                "clave": "RC",
+                "valor": "RESPONSABLE DE LA CONTRATACIÓN"
+            },
+            {
+                "clave": "RE",
+                "valor": "RESPONSABLE DE LA EJECUCIÓN DE LOS TRABAJOS"
+            },
+            {
+                "clave": "T",
+                "valor": "TÉCNICA"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            },
+            {
+                "clave": 3,
+                "valor": "ENAJENACIÓN DE BIENES MUEBLES"
+            }
+        ],
+        "nivelResponsabilidad": [
+            {
+                "clave": "A",
+                "valor": "ATENCIÓN"
+            },
+            {
+                "clave": "R",
+                "valor": "RESOLUCIÓN"
+            },
+            {
+                "clave": "T",
+                "valor": "TRAMITACIÓN"
+            }
+        ],
+        "fechaCaptura": "2021-06-30T15:52:42+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60dc94b2fbb09a001367e735"
+        },
+        "__v": 0,
+        "ejercicioFiscal": "2021",
+        "fechaCaptura": "2021-06-30T16:03:06+00:00",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "Instituto de Acceso a la Información Pública y Protección de Datos Personales",
+            "siglas": "IAIPOAXACA"
+        },
+        "nivelResponsabilidad": [
+            {
+                "clave": "R",
+                "valor": "RESOLUCIÓN"
+            }
+        ],
+        "nombres": "Edwin",
+        "primerApellido": "Robles",
+        "puesto": {
+            "nombre": "Director de Tecnologías de Transparencia",
+            "nivel": "Director"
+        },
+        "ramo": {
+            "clave": 28,
+            "valor": "PARTICIPACIONES A ENTIDADES FEDERATIVAS Y MUNICIPIOS"
+        },
+        "segundoApellido": "Hernandez",
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "Comisionada Presidente",
+                "nivel": "Comisionado Presidente"
+            },
+            "nombres": "María Antonieta",
+            "primerApellido": "Velásquez",
+            "segundoApellido": "Chagoya"
+        },
+        "tipoArea": [
+            {
+                "clave": "R",
+                "valor": "REQUIRENTE"
+            },
+            {
+                "clave": "T",
+                "valor": "TÉCNICA"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            },
+            {
+                "clave": 3,
+                "valor": "ENAJENACIÓN DE BIENES MUEBLES"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "60dc972cfbb09a001367e73a"
+        },
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "Comisionada Presidente",
+                "nivel": "Comisionado Presidente"
+            },
+            "nombres": "María Antonieta",
+            "primerApellido": "Velásquez",
+            "segundoApellido": "Chagoya"
+        },
+        "ejercicioFiscal": "2021",
+        "ramo": {
+            "clave": 28,
+            "valor": "PARTICIPACIONES A ENTIDADES FEDERATIVAS Y MUNICIPIOS"
+        },
+        "nombres": "Mildred Fabiola",
+        "primerApellido": "Estrada",
+        "segundoApellido": "Rubio",
+        "genero": {
+            "clave": "F",
+            "valor": "FEMENINO"
+        },
+        "institucionDependencia": {
+            "nombre": "Instituto de Acceso a la Información Pública y Protección de Datos Personales",
+            "siglas": "IAIPOAXACA"
+        },
+        "puesto": {
+            "nombre": "Directora de Capacitación Comunicación Evaluación Archivos y Datos Personales",
+            "nivel": "Director"
+        },
+        "tipoArea": [
+            {
+                "clave": "R",
+                "valor": "REQUIRENTE"
+            },
+            {
+                "clave": "T",
+                "valor": "TÉCNICA"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "nivelResponsabilidad": [],
+        "fechaCaptura": "2021-06-30T16:09:16+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60dca021fbb09a001367e73d"
+        },
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "Comisionada Presidente",
+                "nivel": "Comisionado Presidente"
+            },
+            "nombres": "María Antonieta",
+            "primerApellido": "Velásquez",
+            "segundoApellido": "Chagoya"
+        },
+        "ejercicioFiscal": "2021",
+        "ramo": {
+            "clave": 28,
+            "valor": "PARTICIPACIONES A ENTIDADES FEDERATIVAS Y MUNICIPIOS"
+        },
+        "nombres": "Juan Carlos",
+        "primerApellido": "Camacho",
+        "segundoApellido": "Garcia",
+        "genero": {
+            "clave": "F",
+            "valor": "FEMENINO"
+        },
+        "institucionDependencia": {
+            "nombre": "Instituto de Acceso a la Información Pública y Protección de Datos Personales",
+            "siglas": "IAIPOAXACA"
+        },
+        "puesto": {
+            "nombre": "Director de Asuntos Jurídicos",
+            "nivel": "Director"
+        },
+        "tipoArea": [
+            {
+                "clave": "R",
+                "valor": "REQUIRENTE"
+            },
+            {
+                "clave": "T",
+                "valor": "TÉCNICA"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "nivelResponsabilidad": [],
+        "fechaCaptura": "2021-06-30T16:47:29+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60dca182fbb09a001367e740"
+        },
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "Comisionada Presidente",
+                "nivel": "Comisionado Presidente"
+            },
+            "nombres": "María Antonieta",
+            "primerApellido": "Velásquez",
+            "segundoApellido": "Chagoya"
+        },
+        "ejercicioFiscal": "2021",
+        "ramo": {
+            "clave": 28,
+            "valor": "PARTICIPACIONES A ENTIDADES FEDERATIVAS Y MUNICIPIOS"
+        },
+        "nombres": "Eugenio Arafat",
+        "primerApellido": "Chávez",
+        "segundoApellido": "Bedolla",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "Instituto de Acceso a la Información Pública y Protección de Datos Personales",
+            "siglas": "IAIPOAXACA"
+        },
+        "puesto": {
+            "nombre": "Director de Gobierno Abierto",
+            "nivel": "Director"
+        },
+        "tipoArea": [
+            {
+                "clave": "R",
+                "valor": "REQUIRENTE"
+            },
+            {
+                "clave": "T",
+                "valor": "TÉCNICA"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "nivelResponsabilidad": [],
+        "fechaCaptura": "2021-06-30T16:53:22+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60dca2cbfbb09a001367e743"
+        },
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "Consejo General",
+                "nivel": "Consejo General"
+            },
+            "nombres": "Consejo",
+            "primerApellido": "General",
+            "segundoApellido": "Consejo Genral"
+        },
+        "ejercicioFiscal": "2021",
+        "ramo": {
+            "clave": 28,
+            "valor": "PARTICIPACIONES A ENTIDADES FEDERATIVAS Y MUNICIPIOS"
+        },
+        "nombres": "Fernando Rodolfo",
+        "primerApellido": "Gómez",
+        "segundoApellido": "Cuevas",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "Instituto de Acceso a la Información Pública y Protección de Datos Personales",
+            "siglas": "IAIPOAXACA"
+        },
+        "puesto": {
+            "nombre": "Comisionado",
+            "nivel": "Comisionado"
+        },
+        "tipoArea": [
+            {
+                "clave": "R",
+                "valor": "REQUIRENTE"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            },
+            {
+                "clave": 3,
+                "valor": "ENAJENACIÓN DE BIENES MUEBLES"
+            }
+        ],
+        "nivelResponsabilidad": [
+            {
+                "clave": "R",
+                "valor": "RESOLUCIÓN"
+            }
+        ],
+        "fechaCaptura": "2021-06-30T16:58:51+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60ec916cfbb09a001367e746"
+        },
+        "ejercicioFiscal": "2021",
+        "nombres": "JOSÉ MANUEL",
+        "primerApellido": "MÉNDEZ",
+        "segundoApellido": "SPÍNDOLA",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "Secretaría de la Contraloría y Transparencia Gubernamental ",
+            "siglas": "SCTG"
+        },
+        "puesto": {
+            "nombre": "DIRECTOR DE TRANSPARENCIA"
+        },
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "fechaCaptura": "2021-07-12T19:01:00+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6101b6a3fbb09a001367e74a"
+        },
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "PRESIDENTE DEL CONSEJO DE LA JUDICATURA DEL PODER JUDICIAL DEL ESTADO DE OAXACA",
+                "nivel": "25A"
+            },
+            "rfc": "PISE590510LU8",
+            "curp": "PISE590510HOCNND01",
+            "nombres": "EDUARDO ",
+            "primerApellido": "PINACHO ",
+            "segundoApellido": "SÁNCHEZ"
+        },
+        "ejercicioFiscal": "2020",
+        "ramo": {
+            "clave": 3,
+            "valor": "PODER JUDICIAL"
+        },
+        "rfc": "ROGC8609217C6",
+        "curp": "ROGC860921HOCBNR03",
+        "nombres": "CARLOS ",
+        "primerApellido": "ROBLES ",
+        "segundoApellido": "GONZALEZ",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "CONSEJO DE LA JUDICATURA DEL PODER JUDICIAL DEL ESTADO DE OAXACA",
+            "clave": "CJO301PJEOCJ",
+            "siglas": "CJO"
+        },
+        "puesto": {
+            "nombre": "DIRECTOR DE INFRAESTRUCTURA JUDICIAL",
+            "nivel": "21 C"
+        },
+        "tipoArea": [
+            {
+                "clave": "T",
+                "valor": "TÉCNICA"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "nivelResponsabilidad": [
+            {
+                "clave": "T",
+                "valor": "TRAMITACIÓN"
+            }
+        ],
+        "fechaCaptura": "2021-07-28T19:57:23+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6101b9c8fbb09a001367e74d"
+        },
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "DIRECTOR DE INFRAESTRUCTURA JUDICIAL ",
+                "nivel": "21 C"
+            },
+            "rfc": "ROGC8609217C6",
+            "curp": "ROGC860921HOCBNR03",
+            "nombres": "CARLOS ",
+            "primerApellido": "ROBLES ",
+            "segundoApellido": "GONZALEZ"
+        },
+        "ejercicioFiscal": "2020",
+        "ramo": {
+            "clave": 3,
+            "valor": "PODER JUDICIAL"
+        },
+        "rfc": "HEMC641121C61",
+        "curp": "HEMC641121HDFRRC01",
+        "nombres": "CECILIO RICARDO ",
+        "primerApellido": "HERNANDEZ",
+        "segundoApellido": "MARQUEZ ",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "CONSEJO DE LA JUDICATURA DEL PODER JUDICIAL DEL ESTADO DE OAXACA",
+            "clave": "CJO301PJEOCJ",
+            "siglas": "CJO"
+        },
+        "puesto": {
+            "nombre": "JEFE DE DEPARTAMENTO DE PROYECTOS Y COSTOS ",
+            "nivel": "17 A"
+        },
+        "tipoArea": [
+            {
+                "clave": "T",
+                "valor": "TÉCNICA"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "nivelResponsabilidad": [
+            {
+                "clave": "T",
+                "valor": "TRAMITACIÓN"
+            }
+        ],
+        "fechaCaptura": "2021-07-28T20:10:48+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6101ba53fbb09a001367e750"
+        },
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "DIRECTOR DE INFRAESTRUCTURA JUDICIAL ",
+                "nivel": "21 C"
+            },
+            "rfc": "ROGC8609217C6",
+            "curp": "ROGC860921HOCBNR03",
+            "nombres": "CARLOS ",
+            "primerApellido": "ROBLES ",
+            "segundoApellido": "GONZALEZ"
+        },
+        "ejercicioFiscal": "2020",
+        "ramo": {
+            "clave": 3,
+            "valor": "PODER JUDICIAL"
+        },
+        "rfc": "BEAM741212I89",
+        "curp": "BEAM741212HOCRGR01",
+        "nombres": "MARCELO ",
+        "primerApellido": "BERMUDEZ",
+        "segundoApellido": "AGUIRRE",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "CONSEJO DE LA JUDICATURA DEL PODER JUDICIAL DEL ESTADO DE OAXACA",
+            "clave": "CJO301PJEOCJ",
+            "siglas": "CJO"
+        },
+        "puesto": {
+            "nombre": "JEFE DE DEPARTAMENTO PROTECCIÓN CIVIL",
+            "nivel": "17 A"
+        },
+        "tipoArea": [
+            {
+                "clave": "T",
+                "valor": "TÉCNICA"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "nivelResponsabilidad": [
+            {
+                "clave": "T",
+                "valor": "TRAMITACIÓN"
+            }
+        ],
+        "fechaCaptura": "2021-07-28T20:13:07+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c7a090a71ede001a298c9e"
+        },
+        "__v": 0,
+        "curp": "GAZH631028MOCRRR05",
+        "ejercicioFiscal": "2020",
+        "fechaCaptura": "2021-07-29T13:58:57+00:00",
+        "genero": {
+            "clave": "F",
+            "valor": "FEMENINO"
+        },
+        "institucionDependencia": {
+            "nombre": "PODER JUDICIAL DEL ESTADO DE OAXACA CONS DE LA JUD",
+            "clave": "301PJEOCJ",
+            "siglas": "CJO"
+        },
+        "nivelResponsabilidad": [
+            {
+                "clave": "R",
+                "valor": "RESOLUCIÓN"
+            }
+        ],
+        "nombres": "HERMELINDA",
+        "primerApellido": "GRACIDA",
+        "puesto": {
+            "nombre": "DIRECTORA DE PLAN E INF",
+            "nivel": "21C"
+        },
+        "ramo": {
+            "clave": 3,
+            "valor": "PODER JUDICIAL"
+        },
+        "rfc": "GAZH631028398",
+        "segundoApellido": "ZARATE",
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "PRESIDENTE DEL CJO",
+                "nivel": "25A"
+            },
+            "rfc": "PISE590510LU8",
+            "curp": "PISE590510HOCNNDO1",
+            "nombres": "EDUARDO",
+            "primerApellido": "PINACHO",
+            "segundoApellido": "SANCHEZ"
+        },
+        "tipoArea": [
+            {
+                "clave": "RC",
+                "valor": "RESPONSABLE DE LA CONTRATACIÓN"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "6102fb1dfbb09a001367e755"
+        },
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "PRESIDENTE DEL TSJO",
+                "nivel": "25A"
+            },
+            "rfc": "PISE590510LU8",
+            "curp": "PISE590510HOCNNDO1",
+            "nombres": "EDUARDO",
+            "primerApellido": "PINACHO",
+            "segundoApellido": "SANCHEZ"
+        },
+        "ejercicioFiscal": "2020",
+        "ramo": {
+            "clave": 3,
+            "valor": "PODER JUDICIAL"
+        },
+        "rfc": "MOLR5105138N9",
+        "curp": "MOLR510513HOCRPB16",
+        "nombres": "ROBERTO",
+        "primerApellido": "MORALES",
+        "segundoApellido": "LÓPEZ",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "TRIBUNAL SUPERIOR DE JUSTIICIA",
+            "siglas": "TSJO"
+        },
+        "puesto": {
+            "nombre": "DIRECTOR GESTIÓN ADMVA.",
+            "nivel": "21B"
+        },
+        "tipoArea": [
+            {
+                "clave": "C",
+                "valor": "CONTRATANTE"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ],
+        "nivelResponsabilidad": [
+            {
+                "clave": "A",
+                "valor": "ATENCIÓN"
+            }
+        ],
+        "fechaCaptura": "2021-07-29T19:01:49+00:00",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "60c3c2aba71ede001a298c76"
+        },
+        "__v": 0,
+        "curp": "BECJ791208HPLNLR09",
+        "ejercicioFiscal": "2021",
+        "fechaCaptura": "2021-08-04T18:15:36+00:00",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "nivelResponsabilidad": [
+            {
+                "clave": "A",
+                "valor": "ATENCIÓN"
+            },
+            {
+                "clave": "R",
+                "valor": "RESOLUCIÓN"
+            },
+            {
+                "clave": "T",
+                "valor": "TRAMITACIÓN"
+            }
+        ],
+        "nombres": "JORGE ANTONIO",
+        "primerApellido": "BENÍTEZ",
+        "puesto": {
+            "nombre": "SUBSECRETARIO"
+        },
+        "segundoApellido": "CALVA",
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "Secretario",
+                "nivel": "secretario"
+            },
+            "curp": "DINA721203HOCZVN07",
+            "nombres": "José Ángel ",
+            "primerApellido": "Díaz ",
+            "segundoApellido": "Navarro"
+        },
+        "tipoArea": [
+            {
+                "clave": "RE",
+                "valor": "RESPONSABLE DE LA EJECUCIÓN DE LOS TRABAJOS"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "60c3c33ea71ede001a298c79"
+        },
+        "__v": 0,
+        "curp": "BELG790602HDFNYS00",
+        "ejercicioFiscal": "2021",
+        "fechaCaptura": "2021-08-06T19:49:52+00:00",
+        "genero": {
+            "clave": "M",
+            "valor": "MASCULINO"
+        },
+        "institucionDependencia": {
+            "nombre": "SCTG",
+            "siglas": "SCTG"
+        },
+        "nivelResponsabilidad": [
+            {
+                "clave": "A",
+                "valor": "ATENCIÓN"
+            },
+            {
+                "clave": "R",
+                "valor": "RESOLUCIÓN"
+            },
+            {
+                "clave": "T",
+                "valor": "TRAMITACIÓN"
+            }
+        ],
+        "nombres": "GUSTAVO MARCHELO",
+        "primerApellido": "BENECCHI",
+        "puesto": {
+            "nombre": "SUBSECRETARIO"
+        },
+        "segundoApellido": "LOYOLA",
+        "superiorInmediato": {
+            "puesto": {
+                "nombre": "Secretario",
+                "nivel": "secretario"
+            },
+            "curp": "DINA721203HOCZVN07",
+            "nombres": "José Ángel ",
+            "primerApellido": "Díaz ",
+            "segundoApellido": "Navarro"
+        },
+        "tipoArea": [
+            {
+                "clave": "O",
+                "valor": "OTRA"
+            }
+        ],
+        "tipoProcedimiento": [
+            {
+                "clave": 1,
+                "valor": "CONTRATACIONES PÚBLICAS"
+            }
+        ]
+    }
+]
