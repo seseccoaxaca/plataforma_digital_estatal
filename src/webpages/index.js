@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 
 
+
 import {
     BrowserRouter as Router,
     // Switch,
@@ -13,6 +14,8 @@ import Home from './home';
 import MesaAyuda from './mesaAyuda';
 import CalidadDatos from './calidadDatos';
 import Especificaciones from './especificaciones';
+import Login from './login';
+
 const Webpages = () => {
     return (
         <Router>
@@ -20,7 +23,6 @@ const Webpages = () => {
                 <Route exact path="/" component={Home} />
                 <Route path="/mesa-ayuda" component={MesaAyuda} />
                 <Route path="/calidad-datos" component={CalidadDatos} />
-                <Route path="/especificaciones" component={Especificaciones} />
             </Layout>
         </Router>
     );

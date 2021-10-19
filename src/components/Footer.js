@@ -25,38 +25,37 @@ export default function Footer() {
 
     return (
     <React.Fragment>
-        <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
+        <GlobalStyles />
         <CssBaseline />
         {/* Footer */}
-        <Container
-        maxWidth="md"
-        component="footer"
-        sx={{
-            borderTop: (theme) => `1px solid ${theme.palette.divider}`,
-            mt: 4,
-            py: [3, 3],
-        }}
-        >
-        <Grid container spacing={2} justifyContent="space-between">
-            {footers.map((footer) => (
-            <Grid item xs={6} sm={3} key={footer.title}>
-                <Typography variant="h6" color="text.primary" gutterBottom>
-                {footer.title}
-                </Typography>
-                <ul>
-                {footer.description.map((item) => (
-                    <li key={item}>
-                    <Link href="#" variant="subtitle1" color="text.secondary">
-                        {item}
-                    </Link>
-                    </li>
+            <Container
+            component="footer"
+            sx={{
+                borderTop: (theme) => `1px solid ${theme.palette.divider}`,
+                mt: 4,
+                py: [3, 3],
+            }}
+            >
+            <Grid container spacing={2} justifyContent="space-between">
+                {footers.map((footer) => (
+                <Grid item xs={6} sm={3} key={footer.title}>
+                    <Typography variant="h6" color="text.primary" gutterBottom>
+                    {footer.title}
+                    </Typography>
+                    <ul>
+                    {footer.description.map((item) => (
+                        <li key={item}>
+                        <Link href="#" variant="subtitle1" color="text.secondary">
+                            {item}
+                        </Link>
+                        </li>
+                    ))}
+                    </ul>
+                </Grid>
                 ))}
-                </ul>
             </Grid>
-            ))}
-        </Grid>
 
-        </Container>
+            </Container>
         {/* End footer */}
     </React.Fragment>
     );

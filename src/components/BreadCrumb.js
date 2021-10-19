@@ -12,7 +12,7 @@ const CustomSeparator = (props) => {
   const pathnames = pathname.split("/").filter(x => x);
 
   return (
-    <Box sx={{ bgcolor: '#cfe8fc' }} >
+    <Box sx={{ bgcolor: '#E2E2E2' }} >
       <Container sx={{ py: '2vh' }} >
         <MUIBreadcrumbs
           separator={<NavigateNextIcon fontSize="small" />}

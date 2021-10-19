@@ -1,27 +1,22 @@
 import React from 'react'
-import { AppBar, Box, Toolbar, Typography, IconButton, MenuItem, Menu } from '@mui/material';
-
-
+import { AppBar, Box, Toolbar, Typography, IconButton, Stack , Button } from '@mui/material';
+import { useAuth0 } from '@auth0/auth0-react';
 import MenuIcon from '@mui/icons-material/Menu';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import HomeIcon from '@mui/icons-material/Home';
+import HelpIcon from '@mui/icons-material/Help';
+import FileCopyIcon from '@mui/icons-material/FileCopy';
+import SearchIcon from '@mui/icons-material/Search';
+import TouchAppIcon from '@mui/icons-material/TouchApp';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 
 import { Link } from 'react-router-dom';
 
 export default function MenuAppBar() {
-  const [auth] = React.useState(true);
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
-  const handleMenu = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  return (
+  const { loginWithRedirect, isAuthenticated, user,logout } = useAuth0();
+  return ( 
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" sx={{ backgroundColor:"#0B1D1F" }}> 
         <Toolbar>
           <IconButton
             size="large"
@@ -33,77 +28,21 @@ export default function MenuAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Plataforma Digital Estatal
+            Plataforma digital estatal
           </Typography>
-          {auth && (
-            <div>
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleMenu}
-                color="inherit"
-              >
-                <MoreHorizIcon />
-              </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorEl}
-                anchorOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-              >
-
-                <Link to="/">
-                  <MenuItem onClick={handleClose}>
-                    Inicio
-                  </MenuItem>
-                </Link>
-                <Link to="/mesa-ayuda">
-                  <MenuItem onClick={handleClose}>
-                    Mesa de ayuda
-                  </MenuItem>
-                </Link>
-                <Link to="/calidad-datos">
-                  <MenuItem onClick={handleClose}>
-                    Calidad de datos
-                  </MenuItem>
-                </Link>
-                <Link to="/especificaciones">
-                  <MenuItem onClick={handleClose}>
-                    Especificaciones
-                  </MenuItem>
-                </Link>
-
-                <MenuItem onClick={handleClose}>Blog</MenuItem>
-                <MenuItem onClick={handleClose}>Especificaciones</MenuItem>
-                <MenuItem onClick={handleClose}>Iniciar Sesión</MenuItem>
-              </Menu>
-            </div>
-          )}
+          <Stack direction="row" spacing={2}>
+            <Button component={Link} to="/" color="inherit" startIcon={<HomeIcon />}>Inicio</Button>  
+            <Button color="inherit" component={Link} to="/mesa-ayuda" startIcon={<HelpIcon />}>Mesa de ayuda</Button>
+            <Button color="inherit" component={Link} to="/blog" startIcon={<FileCopyIcon />}>Blog</Button>
+            <Button color="inherit" component={Link} to="/calidad-datos" startIcon={<SearchIcon />}>Calidad de datos</Button>
+            
+            {!isAuthenticated ? (
+              <Button color="inherit" onClick={()=>{loginWithRedirect()}} startIcon={<PeopleAltIcon />}>Iniciar Sesión</Button>
+            ) : <Button color="inherit" onClick={() => {logout()}} startIcon={<VerifiedUserIcon />}>{user.name}</Button>}
+            
+          </Stack>
         </Toolbar>
       </AppBar>
     </Box>
   );
 }
-
-//   //file: src/components/Header.js
-// import React from 'react';
-// import logo from '../images/xvlogo.png';
-// const Header = () => {
-// return (
-//     <header>
-//         <img src={logo} alt="Xcelvations Logo" height="40" />
-//     </header>
-//     );
-// };
-// export default Header;
