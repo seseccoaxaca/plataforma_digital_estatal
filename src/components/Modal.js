@@ -20,6 +20,7 @@ export default function AlertDialogSlide() {
   const [open, setOpen] = React.useState(true);
 
   // const [cookies, setCookie] = useCookies(["modal"]);
+  // eslint-disable-next-line
   const [cookies, setCookie] = useCookies(["modal"]);
 
 

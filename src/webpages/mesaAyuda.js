@@ -5,7 +5,12 @@ import Hero from '../components/HeroPages';
 import Description from '../components/Description';
 import Accordion from '../components/Accordion';
 
+import { useCookies } from 'react-cookie';
+import  { Redirect } from 'react-router-dom'
+
 const Home = () => {
+    const [cookies] = useCookies(['modal']);
+    
     const linkPDN = (
         <div>
             <a href="https://www.plataformadigitalnacional.org/" rel="noreferrer" target="_blank">https://www.plataformadigitalnacional.org/</a>
@@ -82,11 +87,15 @@ const Home = () => {
 
     return (
         <div>
-            <BreadCrumb />
-            <Hero titulo="Mesa de ayuda" link="https://images.pexels.com/photos/6476254/pexels-photo-6476254.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
-            {/* <Panel titulo={"Mesa de ayuda"} /> */}
-            <Description descripcion={"Consulta las dudas más frecuentes sobre el desarrollo y construcción de la PDN, además encontrarás preguntas y respuestas sobre los datos que conforman la PDN así como un correo electrónico de apoyo en caso de no haber solucionado tus dudas."} />
-            <Accordion data={data} />
+            {cookies.modal !== "activo" ? <Redirect to='/'  /> : 
+                <div>
+                    <BreadCrumb />
+                    <Hero titulo="Mesa de ayuda" link="https://images.pexels.com/photos/6476254/pexels-photo-6476254.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                    {/* <Panel titulo={"Mesa de ayuda"} /> */}
+                    <Description descripcion={"Consulta las dudas más frecuentes sobre el desarrollo y construcción de la PDN, además encontrarás preguntas y respuestas sobre los datos que conforman la PDN así como un correo electrónico de apoyo en caso de no haber solucionado tus dudas."} />
+                    <Accordion data={data} />
+                </div>
+            }
         </div>
     );
 };

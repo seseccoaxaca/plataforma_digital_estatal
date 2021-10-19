@@ -6,6 +6,7 @@ import GridB from '../components/GridButtons';
 import SeccionVideo from '../components/SeccionVideo';
 // import Navigation from '../components/Navigation';
 import { Box} from '@mui/material';
+
 import { useCookies } from 'react-cookie';
 
 const Home = () => {
