@@ -1,17 +1,19 @@
 import React from 'react'
 import { AppBar, Box, Toolbar, Typography, IconButton, Stack , Button } from '@mui/material';
-
+import { useAuth0 } from '@auth0/auth0-react';
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import HelpIcon from '@mui/icons-material/Help';
 import FileCopyIcon from '@mui/icons-material/FileCopy';
 import SearchIcon from '@mui/icons-material/Search';
 import TouchAppIcon from '@mui/icons-material/TouchApp';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 
 import { Link } from 'react-router-dom';
 
 export default function MenuAppBar() {
-
+  const { loginWithRedirect, isAuthenticated, user,logout } = useAuth0();
   return ( 
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{ backgroundColor:"#0B1D1F" }}> 
@@ -33,7 +35,11 @@ export default function MenuAppBar() {
             <Button color="inherit" component={Link} to="/mesa-ayuda" startIcon={<HelpIcon />}>Mesa de ayuda</Button>
             <Button color="inherit" component={Link} to="/blog" startIcon={<FileCopyIcon />}>Blog</Button>
             <Button color="inherit" component={Link} to="/calidad-datos" startIcon={<SearchIcon />}>Calidad de datos</Button>
-            <Button color="inherit" component={Link} to="/especificaciones" startIcon={<TouchAppIcon />}>Especificaciones</Button>
+            
+            {!isAuthenticated ? (
+              <Button color="inherit" onClick={()=>{loginWithRedirect()}} startIcon={<PeopleAltIcon />}>Iniciar Sesión</Button>
+            ) : <Button color="inherit" onClick={() => {logout()}} startIcon={<VerifiedUserIcon />}>{user.name}</Button>}
+            
           </Stack>
         </Toolbar>
       </AppBar>
