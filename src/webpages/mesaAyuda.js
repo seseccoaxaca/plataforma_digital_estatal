@@ -7,42 +7,26 @@ import Accordion from '../components/Accordion';
 import { Button  } from '@mui/material';
 
 const Home = () => {
-    const queEsLaPDE = (
+    const linkPDN = (
         <div>
-            <p>
-                Una fuente de inteligencia para construir integridad y combatir la corrupción que creará valor para el gobierno y la sociedad a partir de grandes cantidades de datos. 
-                <br/><br/> Un medio para el intercambio de datos anticorrupción del gobierno, que busca quitar barreras y romper silos de información para que los datos sean comparables, accesibles y utilizables.
-                <br/><br/> El desarrollo de la PDN considera seis sistemas que contienen datos estratégicos para la lucha contra la corrupción, contemplados en la Ley General del Sistema Nacional Anticorrupción (LGSNA):
-            </p>
-            <br/>
-            <ul>
-                <li>Sistema 1 | Declaraciones patrimonial, de intereses y constancia de declaración fiscal.</li>
-                <li>Sistema 2 | Servidores públicos que intervienen en procedimientos de contratación.</li>
-                <li>Sistema 3 | Servidores públicos y particulares sancionados.</li>
-                <li>Sistema 4 | Información y comunicación del Sistema Nacional Anticorrupción y el Sistema Nacional de Fiscalización.</li>
-                <li>Sistema 5 | Denuncias por faltas administrativas y hechos de corrupción.</li>
-                <li>Sistema 6 | Contrataciones Públicas.</li>
-            </ul>
-            <br/>
-            <p>Es importante señalar que la PDN no es un repositorio ni generadora de los datos de cada sistema, sino que es una plataforma de interoperabilidad.</p>
-                <Button variant="contained" sx={{ mx:1, backgroundColor:"#FEA142" }}>¿QUÉ ES LA PDN?</Button>
-                <Button variant="contained" sx={{ mx:1, backgroundColor:"#FEA142" }}>¿CÓMO SE CONTRUYE?</Button>
-                <Button variant="contained" sx={{ mx:1, backgroundColor:"#FEA142" }}>¿GUÍA DESARROLLO PDE?</Button>
+            <a href="https://www.plataformadigitalnacional.org/" target="_blank">https://www.plataformadigitalnacional.org/</a>
         </div>
     );
 
-    const objetivosPDE = (
+    const elementosPDE = (
         <div>
-            Usar nuevas tecnologías y metodologías de trabajo como apoyo al trabajo de las autoridades del Sistema Nacional Anticorrupción para:
+            De acuerdo con la Ley del Sistema Estatal de Combate a la Corrupción en su artículo 43 “La Plataforma Digital del Sistema Estatal estará conformada por la información que a ella incorporen las autoridades integrantes del Sistema Estatal y contará, al menos, con los siguientes sistemas electrónicos: 
             <br/><br/>
             <ul>
-                <li>Analizar y alertar a las autoridades sobre riesgos de corrupción;</li>
-                <li>Automatizar procesos, evitar discrecionalidad y conflicto de interés;</li>
-                <li>Promover el uso de los datos para respaldar sanciones;</li>
-                <li>Dar seguimiento, en tiempo real, a los procesos y proyectos de contratación pública, y garantizar una mayor eficiencia en las compras públicas;</li>
-                <li>Fortalecer la participación ciudadana en el combate a la corrupción;</li>
-                <li>Incorporar información sobre indicadores para evaluar la Política Nacional Anticorrupción;</li>
-                <li>Dar evidencia para generar recomendaciones de política pública a las autoridades;</li>
+                <li>I.	Sistema de evolución patrimonial, declaración de intereses y constancia de presentación de declaración fiscal;</li>
+                <li>II.	Sistema de los Servidores públicos y particulares que intervengan en procedimientos de contrataciones públicas; </li>
+                <li>III. Catálogo de empresas prestadoras de servicios de los Poderes del Estado y Municipios; </li>
+                <li>IV.	Sistema Estatal de Servidores públicos y particulares sancionados; </li>
+                <li>V. Sistema de información y comunicación del Sistema Estatal;</li>
+                <li>VI. Sistema de denuncias públicas, de faltas administrativas y hechos de corrupción;</li>
+                <li>VII. Sistema de Información Pública de Contrataciones; </li>
+                <li>VIII.Sistema de seguimiento a las recomendaciones emitidas; </li>
+                <lI>IX.	Indicadores de evaluación.</lI>
             </ul>
         </div>
     );
@@ -51,54 +35,49 @@ const Home = () => {
     const data = [
         {
             'id': 'panel1',
-            'heading': '¿Qué es la PDE?',
+            'heading': '1.	¿Qué es la Plataforma Digital Estatal (PDE)?',
             // 'secondaryHeading': 'Hello world',
-            'details': queEsLaPDE
+            'details': "La Plataforma Digital Estatal es una herramienta de inteligencia Institucional del Sistema Estatal de Combate a la Corrupción, para el cumplimiento de sus funciones, obligaciones y facultades, en donde a través de la interconexión de los nueve sistemas, se podrá detectar, prevenir, generar políticas que desalienten y combatan actos de corrupción. "
         },
         {
             'id': 'panel2',
-            'heading': 'Objetivos de la PDE',
-            'details': objetivosPDE
+            'heading': '2.	¿Que hace la Secretaría Ejecutiva del Sistema Estatal de Combate a la Corrupción (SESECC) con relación a la Plataforma Digital Estatal?',
+            'details': "Es la encargada de administrar la Plataforma Digital Estatal en términos de la Ley del Sistema Estatal de Combate a la Corrupción."
         },
         {
             'id': 'panel3',
-            'heading': 'Marco normativo',
-            'details': 'Nulla facilisi. Phasellus sollicitudin nulla et quam'
+            'heading': '3.	¿Cuántos sistemas integran la Plataforma Digital Estatal?',
+            'details': elementosPDE
         },
         {
             'id': 'panel4',
-            'heading': '¿Qué hace la SESNA y la USTPDN?',
-            'details': 'Nulla facilisi. Phasellus sollicitudin nulla et quam'
+            'heading': '4.	Objetivo General de la PDE',
+            'details': 'La Plataforma Digital Estatal (PDE) deberá ser el principal instrumento de inteligencia institucional con el que cuente el Sistema Estatal de Combate a la Corrupción (SECC), para coadyuvar y facilitar el cumplimiento de las obligaciones y facultades que se le atribuyen en materia de combate a la corrupción.'
         },
         {
             'id': 'panel5',
-            'heading': 'Sistemas Estatales Anticorrupción',
-            'details': 'Nulla facilisi. Phasellus sollicitudin nulla et quam'
+            'heading': '5.	¿Qué papel juega la PDE dentro del Sistema Estatal de Combate a la Corrupción?',
+            'details': 'La plataforma será la fuente de información fiderigna, herramienta indispensable para el seguimiento de procedimientos contemplados en la normatividad aplicable y mecanismo de rendición de cuentas en el combate a la corrupción. Por su relevancia en la prevención, investigación y sanción de los actos de corrupción, la Plataforma permitirá que las acciones de los órganos ejecutores del Sistema Estatal de Combate a la Corrupción, y por tanto destinarios de sus decisiones, así como de los entes públicos con obligaciones en materia de combate a la corrupción, se lleven a cabo en función de las finalidades y objetivos para los que fueron instituidos en la Constitución Política del Estado Libre y Soberano de Oaxaca, en las leyes secundarias que de ella emanen, de conformidad con los estándares nacionales de combate a la corrupción y promoción de la integridad del servicio público.'
         },
         {
             'id': 'panel6',
-            'heading': 'Preguntas técnicas frecuentes',
-            'details': 'Nulla facilisi. Phasellus sollicitudin nulla et quam'
+            'heading': '6.	¿Se van  compartir los datos reservados o personales?',
+            'details': 'No, los integrantes del Sistema Estatal de Combate a la Corrupción promoverán la publicación de la información contenida en la plataforma en formato de datos abiertos, conforme a la Ley de Transparencia, Acceso a la Información Pública y Buen Gobierno del Estado de Oaxaca'
         },
         {
             'id': 'panel7',
-            'heading': 'Preguntas frecuentes - datos',
-            'details': 'Nulla facilisi. Phasellus sollicitudin nulla et quam'
+            'heading': '7.	¿Quiénes podrán accesar a la Plataforma Digital Estatal?',
+            'details': 'Existen dos tipos de accesos, el primer acceso es para la ciudadanía donde visualizará los datos que tienen carácter público, de acuerdo a la Ley de Transparencia, Acceso a la Información Pública y Buen Gobierno del Estado de Oaxaca.'
         },
         {
             'id': 'panel8',
-            'heading': 'Protocolo de conexión',
-            'details': 'Nulla facilisi. Phasellus sollicitudin nulla et quam'
+            'heading': '8. Marco Normativo',
+            'details': "El Marco Normativo de la Plataforma Digital Estatal está compuesto por la Ley del Sistema Estatal de Combate a la Corrupción (LSECC), la Ley de Responsabilidades Administrativas del Estado y Municipios de Oaxaca y el Acuerdo Mediante el cual el Comité Coordinador del Sistema Estatal de Combate a la Corrupción emite el análisis para la implementación y operación de la Plataforma Digital Estatal y las Bases para el Funcionamiento de la Plataforma Digital Estatal."
         },
         {
             'id': 'panel9',
-            'heading': 'Sistema declaración patrimonial y de intereses',
-            'details': 'Nulla facilisi. Phasellus sollicitudin nulla et quam'
-        },
-        {
-            'id': 'panel10',
-            'heading': 'Contáctanos',
-            'details': 'Escribenos si tienes dudas sobre la construcción de la PDN. pdnsesna@gob.mx'
+            'heading': '9.	¿Como accedo a consultar la información Pública de la PDN?',
+            'details': linkPDN
         },
     ]
 

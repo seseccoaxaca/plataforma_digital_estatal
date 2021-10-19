@@ -26,7 +26,7 @@ export default function ControlledAccordions(props) {
                                 aria-controls="panel1bh-content"
                                 id="panel1bh-header"
                             >
-                                <Typography sx={{ width: '33%', flexShrink: 0 }}>
+                                <Typography sx={{ width: '100%', flexShrink: 0, fontWeight: "bold" }}>
                                     {heading}
                                 </Typography>
                                 {/* <Typography sx={{ color: 'text.secondary' }}>
@@ -34,7 +34,7 @@ export default function ControlledAccordions(props) {
                                 </Typography> */}
                             </AccordionSummary>
                             <AccordionDetails>
-                                <Typography>
+                                <Typography sx={{ textAlign: "justify", textJustify: "inter-word", }}>
                                     {details}
                                 </Typography>
                             </AccordionDetails>
