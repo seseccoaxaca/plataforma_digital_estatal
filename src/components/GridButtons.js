@@ -1,106 +1,223 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import { Box, Paper, Grid, Link } from '@mui/material';
+import Grid from '@material-ui/core/Grid';
+import {withStyles} from '@material-ui/core/styles';
+import {Link} from 'react-router-dom';
+import Typography from "@material-ui/core/Typography";
+import Tooltip from '@material-ui/core/Tooltip';
+import s1 from '../components/assets/iconos_azul/1_icono.svg';
+import s2 from '../components/assets/iconos_azul/2_icono.svg';
+import s3 from '../components/assets/iconos_azul/3_icono.svg';
+import s4 from '../components/assets/iconos_azul/4_icono.svg';
+import s5 from '../components/assets/iconos_azul/5_icono.svg';
+import s6 from '../components/assets/iconos_azul/6_icono.svg';
 // import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 
-const Item = styled(Paper)(({ theme }) => ({
-  ...theme.typography.h5,
-  textAlign: 'center',
-  color: "#fff",
-  fontWeight: "Bold",
-  // backgroundColor: "#FEA142",
-  backgroundColor: "#0A1D1F",
+const styles = theme => ({
+  root: {
+      flexGrow: 1
+  },
+  container: {
+      paddingTop: 110,
+      paddingBottom: 100
+  },
+  link: {
+      textDecoration: "none"
+  },
+  text: {
+    color: '#0B1D1F',
+      paddingBottom: 60,
+      [theme.breakpoints.down('sm')]:{
+          fontSize: '22px',
+      },
+  },
+  disabled: {
+      opacity: 0.3,
+      maxWidth: 200,
+      [theme.breakpoints.down('sm')]:{
+          maxWidth: 150
+      },
+  },
+  iconosSistemas: {
+      maxWidth: 200,
+      [theme.breakpoints.down('sm')]:{
+          maxWidth: 150
+      },
+      '&:hover':{
+          opacity: 0.5,
+          cursor: "pointer"
+      }
+  },
+  textExplora: {
+    color: '#0B1D1F', 
+      fontWeight: 500,
+      fontSize: '48px',
+      [theme.breakpoints.down('sm')]:{
+          fontSize: '40px',
+      },
+      paddingBottom: theme.spacing(12)
+  }
 
-  width: "15vw",
-  height: "15vw",
-  borderRadius: "50%",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  margin: "auto",
+});
 
-}));
-
-export default function BasicGrid() {
+const Sistemas = props => {
+  const { classes } = props;
   return (
-    <Box
-      sx={{ flexGrow: 1 }}>
-      <Grid container spacing={1}
-        paddingTop="5vh"
-        paddingBottom="5vh"
-        // alignItems="center"
-        // justifyContent="center"
+      <div className={classes.root}>
+          <Grid
+              container
+              spacing={0}
+              justifyContent="center"
+              className={classes.container}
+             
+          >
+              <Grid item xs={12} align="center">
+                  <Typography className={classes.textExplora} paragraph>
+                      Explora los 9 sistemas
+                  </Typography>
+              </Grid>
 
-      >
-        <Grid item xs={12}
-          alignItems="center"
-          justifyContent="center">
-          <Item>
-            <Link href="/declaraciones" underline="none" color="#fff" >
-            S1 Declaraciones
-            </Link>
-          </Item>
-        </Grid>
-        <Grid item xs={6}>
-          <Item>
-            <Link href="/servidores" underline="none" color="#fff" >
-            S2 Publicos & Particulares en contrataciones
-            </Link>
-          </Item>
-        </Grid>
-        <Grid item xs={6}>
-          <Item>
-            <Link href="/catalogo" underline="none" color="#fff">
-            S3 Catálogo de empresas
-            </Link>
-          </Item>
-        </Grid>
-        <Grid item xs={3}>
-          <Item>
-            <Link href="/sancionados" underline="none" color="#fff">
-            S4 Sancionados
-            </Link>
-          </Item>
-        </Grid>
-        <Grid item xs={3}>
-          <Item>
-            <Link href="/info-comunicacion" underline="none" color="#fff">
-            S5 Información & Comunicación
-            </Link>
-          </Item>
-        </Grid>
-        <Grid item xs={3}>
-          <Item>
-            <Link href="/denuncias" underline="none" color="#fff">
-            S6 Denuncias públicas
-            </Link>
-          </Item>
-        </Grid>
-        <Grid item xs={3}>
-          <Item>
-            <Link href="/contrataciones" underline="none" color="#fff">
-            S7 Contrataciones
-            </Link>
-          </Item>
-        </Grid>
-        <Grid item xs={6}>
-          <Item>
-            <Link href="/seguimiento" underline="none" color="#fff">
-              S8 Seguimiento
-            </Link>
-          </Item>
-        </Grid>
-        <Grid item xs={6}>
-          <Item>
-            <Link href="/indicadores" underline="none" color="#fff">
-              S9 Indicadores
-            </Link>
-          </Item>
-        </Grid>
-        {/* <Grid item xs={4}>
-          <Item>Contrataciones</Item>
-        </Grid> */}
-      </Grid>
-    </Box>
+              <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
+                  <Tooltip
+                      title="Sistema de evolución patrimonial, de declaración de intereses y constancia de presentación de declaración fiscal"
+                      placement="top"
+                  >
+                      <Link
+                          to="/declaraciones"
+                          className={classes.link}
+                      >
+                          <img
+                              src={s1}
+                              alt="Sistema 1"
+                              className={classes.disabled}
+                          />
+                          <br />
+                          <Typography variant="h5" className={classes.text}>
+                              Declaraciones
+                          </Typography>
+                      </Link>
+                  </Tooltip>
+              </Grid>
+              <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
+                  <Tooltip
+                      title="Sistema de los Servidores públicos que intervengan en procedimientos de contrataciones públicas"
+                      placement="top"
+                  >
+                      <Link to="/servidores" className={classes.link}>
+                          <img
+                              src={s2}
+                              alt="Sistema 2"
+                              className={classes.iconosSistemas}
+                          />
+                          <br />
+                          <Typography variant="h5" className={classes.text}>
+                              Servidores públicos <br/> en contrataciones
+                          </Typography>
+                      </Link>
+                  </Tooltip>
+              </Grid>
+              <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
+                  <Tooltip
+                      title="Sistema nacional de Servidores públicos y particulares sancionados"
+                      placement="top"
+                  >
+                      <Link to="/sancionados" className={classes.link}>
+                          <img
+                              src={s3}
+                              alt="Sistema 3"
+                              className={classes.iconosSistemas}
+                          />
+                          <br />
+                          <Typography variant="h5" className={classes.text}>
+                              Sancionados
+                          </Typography>
+                      </Link>
+                  </Tooltip>
+              </Grid>
+              <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
+                  {/*<Link to="/pdn/home" className={classes.link }>*/}
+                  <img
+                      src={s4}
+                      alt="Sistema 4"
+                      className={classes.disabled}
+                  />
+                  <br />
+                  <Typography variant="h5" className={classes.text}>
+                      Fiscalización
+                  </Typography>
+                  {/*</Link>*/}
+              </Grid>
+              <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
+                  {/*<Link to="/pdn/home" className={classes.link }>*/}
+                  <img
+                      src={s5}
+                      alt="Sistema 5"
+                      className={classes.disabled}
+                  />
+                  <br />
+                  <Typography variant="h5" className={classes.text}>
+                      Denuncias
+                  </Typography>
+                  {/*</Link>*/}
+              </Grid>
+              <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
+                  <Tooltip
+                      title="Sistema de Información Pública de Contrataciones"
+                      placement="top"
+                  >
+                      <Link to="/contrataciones" className={classes.link}>
+                          <img
+                              src={s6}
+                              alt="Sistema 6"
+                              className={classes.disabled}
+                          />
+                          <br />
+                          <Typography variant="h5" className={classes.text}>
+                              Contrataciones
+                          </Typography>
+                      </Link>
+                  </Tooltip>
+              </Grid>
+              <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
+                  {/*<Link to="/pdn/home" className={classes.link }>*/}
+                  <img
+                      src={s5}
+                      alt="Sistema 7"
+                      className={classes.disabled}
+                  />
+                  <br />
+                  <Typography variant="h5" className={classes.text}>
+                      Denuncias
+                  </Typography>
+                  {/*</Link>*/}
+              </Grid>
+              <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
+                  {/*<Link to="/pdn/home" className={classes.link }>*/}
+                  <img
+                      src={s5}
+                      alt="Sistema 8"
+                      className={classes.disabled}
+                  />
+                  <br />
+                  <Typography variant="h5" className={classes.text}>
+                      Denuncias
+                  </Typography>
+                  {/*</Link>*/}
+              </Grid>
+              <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
+                  {/*<Link to="/pdn/home" className={classes.link }>*/}
+                  <img
+                      src={s5}
+                      alt="Sistema 9"
+                      className={classes.disabled}
+                  />
+                  <br />
+                  <Typography variant="h5" className={classes.text}>
+                      Denuncias
+                  </Typography>
+                  {/*</Link>*/}
+              </Grid>
+          </Grid>
+      </div>
   );
 }
+export default withStyles(styles)(Sistemas);
