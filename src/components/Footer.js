@@ -39,6 +39,7 @@ export default function Footer() {
                 borderTop: (theme) => `1px solid ${theme.palette.divider}`,
                 mt: 4,
                 py: [3, 3],
+                borderBottom: '1px solid #eaeaea'
             }}
             >
             <Grid container spacing={2} justifyContent="space-between">

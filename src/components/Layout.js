@@ -11,8 +11,10 @@ const Layout = ({ children }) => {
         <div className="navigationWrapper">
             <main>{children}</main>
         </div>
+      
         <Footer />
         <StickyFooter />
+        
     </React.Fragment>
     );
 };
