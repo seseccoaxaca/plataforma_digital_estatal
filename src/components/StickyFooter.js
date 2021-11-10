@@ -64,7 +64,7 @@ const styles = theme => ({
 
 function Copyright() {
     return (
-      <Typography variant="body2" color="white">
+      <Typography variant="body2" color="black" sx={{mt:3}} >
         {'Copyright © '}
         <Link color="inherit" href="#">
           PDE
@@ -98,9 +98,12 @@ const Footer = props => {
                             icon={faFacebookSquare} size="2x"/></a>
                         <a href={"https://twitter.com/SESECCOaxaca"} target={"_blank" }className={classes.redSocial} rel="noopener noreferrer"><FontAwesomeIcon
                             icon={faTwitter} size="2x"/></a>
-                        <a href={"https://www.youtube.com/channel/UCGPW2yCI5ZtIbG08g28785g"} target={"_blank" } rel="noopener noreferrer"
+                        <a href={"https://www.youtube.com/channel/UCGPW2yCI5ZtIbG08g28785g"}  target={"_blank" } rel="noopener noreferrer"
                            className={classes.redSocial}><FontAwesomeIcon
-                            icon={faYoutube} size="2x"/></a>
+                            icon={faYoutube} size="2x"/></a>  
+                            <br/>   
+                            <br/>                   
+                              {Copyright()}
 
                     </div>
                 </Grid>
