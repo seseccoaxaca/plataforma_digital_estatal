@@ -23,11 +23,7 @@ const styles = theme => ({
       
       height: "35vh"
   },
-  libreUso: {
-      maxWidth: 140,
-      paddingTop: 40,
-      paddingBottom: 20
-  },
+
   item: {
       maxWidth: "1100px!important"
   },
