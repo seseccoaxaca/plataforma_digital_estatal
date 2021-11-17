@@ -10,6 +10,9 @@ import s3 from '../components/assets/iconos_azul/3_icono.svg';
 import s4 from '../components/assets/iconos_azul/4_icono.svg';
 import s5 from '../components/assets/iconos_azul/5_icono.svg';
 import s6 from '../components/assets/iconos_azul/6_icono.svg';
+import s7 from '../components/assets/iconos_azul/6_icono.svg';
+import s8 from '../components/assets/iconos_azul/8_icono.svg';
+import s9 from '../components/assets/iconos_azul/9_icono.svg';
 // import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 
 const styles = theme => ({
@@ -233,7 +236,7 @@ const Sistemas = props => {
                           className={classes.link}
                       >
                           <img
-                              src={s1}
+                              src={s8}
                               alt="Sistema 8"
                               className={classes.disabled}
                           />
@@ -254,7 +257,7 @@ const Sistemas = props => {
                           className={classes.link}
                       >
                           <img
-                              src={s1}
+                              src={s9}
                               alt="Sistema 9"
                               className={classes.disabled}
                           />
