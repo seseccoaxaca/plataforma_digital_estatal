@@ -30,15 +30,15 @@ const Webpages = () => {
                 <Route exact path="/" component={Home} />
                 <Route path="/mesa-ayuda" component={MesaAyuda} />
                 <Route path="/calidad-datos" component={CalidadDatos} />
-                <Route path="/declaraciones" component={s1} />
-                <Route path="/servidores" component={s2} />
-                <Route path="/catalogo" component={s3} />
-                <Route path="/sancionados" component={s4} />
-                <Route path="/info-comunicacion" component={s5} />
-                <Route path="/denuncias" component={s6} />
-                <Route path="/contrataciones" component={s7} />
-                <Route path="/seguimiento" component={s8} />
-                <Route path="/indicadores" component={s9} />
+                <Route path="/sistemas/declaraciones" component={s1} />
+                <Route path="/sistemas/servidores" component={s2} />
+                <Route path="/sistemas/catalogo" component={s3} />
+                <Route path="/sistemas/sancionados" component={s4} />
+                <Route path="/sistemas/info-comunicacion" component={s5} />
+                <Route path="/sistemas/denuncias" component={s6} />
+                <Route path="/sistemas/contrataciones" component={s7} />
+                <Route path="/sistemas/seguimiento" component={s8} />
+                <Route path="/sistemas/indicadores" component={s9} />
             </Layout>
         </Router>
     );

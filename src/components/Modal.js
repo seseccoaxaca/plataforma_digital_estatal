@@ -33,7 +33,7 @@ export default function AlertDialogSlide() {
   };
 
   function handleCookie(){
-      setCookie("modal", "activo", { path: '/' });
+      setCookie("modal", "activo", { path: '/', maxAge: 60 * 60 * 24 });
       handleClose();
   };
 
