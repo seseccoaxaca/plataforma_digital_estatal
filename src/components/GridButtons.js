@@ -10,6 +10,9 @@ import s3 from '../components/assets/iconos_azul/3_icono.svg';
 import s4 from '../components/assets/iconos_azul/4_icono.svg';
 import s5 from '../components/assets/iconos_azul/5_icono.svg';
 import s6 from '../components/assets/iconos_azul/6_icono.svg';
+import s7 from '../components/assets/iconos_azul/6_icono.svg';
+import s8 from '../components/assets/iconos_azul/8_icono.svg';
+import s9 from '../components/assets/iconos_azul/9_icono.svg';
 // import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 
 const styles = theme => ({
@@ -99,72 +102,97 @@ const Sistemas = props => {
               </Grid>
               <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
                   <Tooltip
-                      title="Sistema de los Servidores públicos que intervengan en procedimientos de contrataciones públicas"
+                      title="Sistema de los Servidores públicos y particulares que intervengan en procedimientos de contrataciones públicas"
                       placement="top"
                   >
-                      <Link to="/servidores" className={classes.link}>
+                      <Link
+                          to="/declaraciones"
+                          className={classes.link}
+                      >
                           <img
                               src={s2}
                               alt="Sistema 2"
-                              className={classes.iconosSistemas}
+                               className={classes.iconosSistemas}
                           />
                           <br />
                           <Typography variant="h5" className={classes.text}>
-                              Servidores públicos <br/> en contrataciones
+                          Servidores en contrataciones
                           </Typography>
                       </Link>
                   </Tooltip>
               </Grid>
               <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
                   <Tooltip
-                      title="Sistema nacional de Servidores públicos y particulares sancionados"
+                      title="Catálogo de empresas prestadoras de servicios de los Poderes del Estado y Municipios."
                       placement="top"
                   >
-                      <Link to="/sancionados" className={classes.link}>
+                      <Link
+                          to="/declaraciones"
+                          className={classes.link}
+                      >
                           <img
                               src={s3}
                               alt="Sistema 3"
-                              className={classes.iconosSistemas}
+                              className={classes.disabled}
                           />
                           <br />
                           <Typography variant="h5" className={classes.text}>
-                              Sancionados
+                          Catálogo de empresas
                           </Typography>
                       </Link>
                   </Tooltip>
               </Grid>
               <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
-                  {/*<Link to="/pdn/home" className={classes.link }>*/}
-                  <img
-                      src={s4}
-                      alt="Sistema 4"
-                      className={classes.disabled}
-                  />
-                  <br />
-                  <Typography variant="h5" className={classes.text}>
-                      Fiscalización
-                  </Typography>
-                  {/*</Link>*/}
-              </Grid>
-              <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
-                  {/*<Link to="/pdn/home" className={classes.link }>*/}
-                  <img
-                      src={s5}
-                      alt="Sistema 5"
-                      className={classes.disabled}
-                  />
-                  <br />
-                  <Typography variant="h5" className={classes.text}>
-                      Denuncias
-                  </Typography>
-                  {/*</Link>*/}
+                  <Tooltip
+                      title="Sistema Estatal de Servidores públicos y particulares sancionados."
+                      placement="top"
+                  >
+                      <Link
+                          to="/declaraciones"
+                          className={classes.link}
+                      >
+                          <img
+                              src={s4}
+                              alt="Sistema 4"
+                              className={classes.iconosSistemas}
+                          />
+                          <br />
+                          <Typography variant="h5" className={classes.text}>
+                          Sancionados
+                          </Typography>
+                      </Link>
+                  </Tooltip>
               </Grid>
               <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
                   <Tooltip
-                      title="Sistema de Información Pública de Contrataciones"
+                      title="Sistema de información y comunicación del Sistema Estatal."
                       placement="top"
                   >
-                      <Link to="/contrataciones" className={classes.link}>
+                      <Link
+                          to="/declaraciones"
+                          className={classes.link}
+                      >
+                          <img
+                              src={s5}
+                              alt="Sistema 5"
+                              className={classes.disabled}
+                          />
+                          <br />
+                          <Typography variant="h5" className={classes.text}>
+                          Información & Comunicación
+                          </Typography>
+                      </Link>
+                  </Tooltip>
+              </Grid>
+              <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
+                  <Tooltip
+                      title="Sistema de denuncias públicas, de faltas administrativas y hechos de corrupción."
+                      placement="top"
+                  >
+                      <Link
+                          to="/declaraciones"
+                          className={classes.link}
+                      >
                           <img
                               src={s6}
                               alt="Sistema 6"
@@ -172,49 +200,73 @@ const Sistemas = props => {
                           />
                           <br />
                           <Typography variant="h5" className={classes.text}>
-                              Contrataciones
+                          Denuncias
                           </Typography>
                       </Link>
                   </Tooltip>
               </Grid>
               <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
-                  {/*<Link to="/pdn/home" className={classes.link }>*/}
-                  <img
-                      src={s5}
-                      alt="Sistema 7"
-                      className={classes.disabled}
-                  />
-                  <br />
-                  <Typography variant="h5" className={classes.text}>
-                      Denuncias
-                  </Typography>
-                  {/*</Link>*/}
+                  <Tooltip
+                      title="Sistema de informacion Públicas de Contrataciones."
+                      placement="top"
+                  >
+                      <Link
+                          to="/declaraciones"
+                          className={classes.link}
+                      >
+                          <img
+                              src={s1}
+                              alt="Sistema 7"
+                              className={classes.disabled}
+                          />
+                          <br />
+                          <Typography variant="h5" className={classes.text}>
+                            Contrataciones
+                          </Typography>
+                      </Link>
+                  </Tooltip>
               </Grid>
               <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
-                  {/*<Link to="/pdn/home" className={classes.link }>*/}
-                  <img
-                      src={s5}
-                      alt="Sistema 8"
-                      className={classes.disabled}
-                  />
-                  <br />
-                  <Typography variant="h5" className={classes.text}>
-                      Denuncias
-                  </Typography>
-                  {/*</Link>*/}
+                  <Tooltip
+                      title="Sistema de Seguimientos a las recomendaciones emitidas."
+                      placement="top"
+                  >
+                      <Link
+                          to="/declaraciones"
+                          className={classes.link}
+                      >
+                          <img
+                              src={s8}
+                              alt="Sistema 8"
+                              className={classes.disabled}
+                          />
+                          <br />
+                          <Typography variant="h5" className={classes.text}>
+                          Recomendaciones
+                          </Typography>
+                      </Link>
+                  </Tooltip>
               </Grid>
               <Grid item xl={2} lg={4} md={6} sm={6} xs={12} align="center">
-                  {/*<Link to="/pdn/home" className={classes.link }>*/}
-                  <img
-                      src={s5}
-                      alt="Sistema 9"
-                      className={classes.disabled}
-                  />
-                  <br />
-                  <Typography variant="h5" className={classes.text}>
-                      Denuncias
-                  </Typography>
-                  {/*</Link>*/}
+                  <Tooltip
+                      title="Sistema de evolución patrimonial, de declaración de intereses y constancia de presentación de declaración fiscal"
+                      placement="top"
+                  >
+                      <Link
+                          to="/declaraciones"
+                          className={classes.link}
+                      >
+                          <img
+                              src={s9}
+                              alt="Sistema 9"
+                              className={classes.disabled}
+                          />
+                          <br />
+                          <Typography variant="h5" className={classes.text}>
+                          Indicadores de evaluación
+                          </Typography>
+                      </Link>
+                  </Tooltip>
               </Grid>
           </Grid>
       </div>
