@@ -1,5 +1,5 @@
 //file: src/webpages/home.js
-import React, { useState } from 'react';
+import React from 'react';
 import BreadCrumb from '../../components/BreadCrumb';
 import Hero from '../../components/HeroPages';
 import Description from '../../components/Description';
@@ -19,7 +19,7 @@ const Home = () => {
     // };
 
 
-    const [token, setToken] = useState([]);
+    // const [token, setToken] = useState([]);
 
     const dataAuth = qs.stringify({
         'client_id': 'Client_SEseCC$2y$4',
@@ -41,7 +41,7 @@ const Home = () => {
 
     axios(configAuth).then(function (response) {
         let token = "Bearer " + response.data.access_token;
-        setToken({ token })
+        // setToken({ token })
         console.log(token);
 
     }).catch(function (error) {

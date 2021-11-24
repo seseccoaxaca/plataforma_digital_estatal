@@ -106,7 +106,7 @@ const Sistemas = props => {
                       placement="top"
                   >
                       <Link
-                          to="/declaraciones"
+                          to="/sistemas/servidores"
                           className={classes.link}
                       >
                           <img
@@ -154,7 +154,7 @@ const Sistemas = props => {
                           <img
                               src={s4}
                               alt="Sistema 4"
-                              className={classes.iconosSistemas}
+                              className={classes.disabled}
                           />
                           <br />
                           <Typography variant="h5" className={classes.text}>
@@ -211,11 +211,11 @@ const Sistemas = props => {
                       placement="top"
                   >
                       <Link
-                          to="/declaraciones"
+                          to="/sistemas/declaraciones"
                           className={classes.link}
                       >
                           <img
-                              src={s1}
+                              src={s7}
                               alt="Sistema 7"
                               className={classes.disabled}
                           />
@@ -232,7 +232,7 @@ const Sistemas = props => {
                       placement="top"
                   >
                       <Link
-                          to="/declaraciones"
+                          to="/sistemas/declaraciones"
                           className={classes.link}
                       >
                           <img

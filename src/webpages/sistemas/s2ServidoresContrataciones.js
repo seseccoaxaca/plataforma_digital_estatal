@@ -4,20 +4,64 @@ import BreadCrumb from '../../components/BreadCrumb';
 import Hero from '../../components/HeroPages';
 import Description from '../../components/Description';
 
+// 
+import { tableCellClasses, Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
+import { styled } from '@mui/material/styles';
+//
+
 import { useCookies } from 'react-cookie';
 import { Redirect } from 'react-router-dom';
 import axios from 'axios';
 
 const qs = require("qs")
 
-const Home = () => {
+const ServidoresContrataciones = () => {
     const [cookies, setCookie] = useCookies(['modal', 'token']);
     const [isLoaded, setIsLoaded] = useState(false);
-    const [dependencias, setDependencias] = useState([]); //dependencias
-    const [error, setError] = useState(null); //error
+    // eslint-disable-next-line
+    const [error, setError] = useState(null);
+    const [respuesta, setRespuesta] = useState([]);
+    const [resObj, setResObj] = useState(null);
+
+
 
 
     useEffect(() => {
+        function fetchData() {
+
+            let token = cookies.token.replace("Bearer_", "Bearer ");
+
+            const configPetition = {
+                method: 'post',
+                url: 'https://sesecc-pde.org.mx/v1/spic', // http://132.226.123.35:8080/v1/spic
+                headers: {
+                    'Authorization': token,
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS',
+                    'Content-Type': 'application/json'
+                },
+                data: {
+                    "pageSize": 38,
+                }
+
+            }
+
+            axios(configPetition)
+                .then(function (response) {
+                    let result = Object.entries(response.data.results);
+                    setRespuesta(result);
+                    
+                    setResObj(response.data.results);
+                    
+                    setIsLoaded(true);
+                    console.log(response.data.results);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+
+        }
+
         if (cookies.modal === 'activo' && cookies.token === undefined) {
 
             const dataAuth = qs.stringify({
@@ -31,7 +75,7 @@ const Home = () => {
 
             const configAuth = {
                 method: 'post',
-                url: 'http://132.226.123.35:9003/oauth/token',
+                url: 'https://sesecc-pde.org.mx/oauth/token',  // http://132.226.123.35:9003/oauth/token
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
@@ -40,45 +84,21 @@ const Home = () => {
 
             axios(configAuth).then(function (response) {
                 let token = "Bearer_" + response.data.access_token;
-                // setDependencias({ token })
                 setCookie("token", token, { path: '/', maxAge: 300 });
-                setIsLoaded(true);
-                window.alert("token: " + token);
-
+                // window.alert("token: " + token);
+                fetchData();
             }).catch(function (error) {
+                setError(error);
                 console.log(error);
             });
 
 
         } else {
-            let token = cookies.token;
-            token = token.replace("Bearer_", "Bearer ");
-
-            const configPetition = {
-                method: 'post',
-                url: 'http://132.226.123.35:8080/v1/spic',
-                headers: {
-                    'Authorization': token,
-                    'Access-Control-Allow-Origin': '*',
-                    'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS',
-                    'Content-Type': 'application/json'
-                }
-            }
-
-            axios(configPetition)
-                .then(function (response) {
-                    window.alert(JSON.stringify(response.data));
-                    console.log(JSON.stringify(response.data));
-                })
-                .catch(function (error) {
-                    window.alert(error);
-                    console.log(error);
-                });
+            setIsLoaded(true);
+            fetchData();
         }
-
-
-
-    }, [])
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
 
 
@@ -94,121 +114,110 @@ const Home = () => {
     );
 
 
+    const StyledTableCell = styled(TableCell)(({ theme }) => ({
+        [`&.${tableCellClasses.head}`]: {
+          backgroundColor: theme.palette.common.black,
+          color: theme.palette.common.white,
+        },
+        [`&.${tableCellClasses.body}`]: {
+          fontSize: 14,
+        },
+      }));
+      
+      const StyledTableRow = styled(TableRow)(({ theme }) => ({
+        '&:nth-of-type(odd)': {
+          backgroundColor: theme.palette.action.hover,
+        },
+        // hide last border
+        '&:last-child td, &:last-child th': {
+          border: 0,
+        },
+      }));
 
-    // useEffect(() => {
-    //     fetch("https://jsonplaceholder.typicode.com/users/")
-    //         .then(res => res.json())
-    //         .then(
-    //             (data) => {
-    //                 setIsLoaded(true);
-    //                 setDependencias(data);
-    //             },
-    //             (error) => {
-    //                 setIsLoaded(true);
-    //                 setError(error);
-    //             }
-    //         )
-    // }, [])
 
-    // if (error) {
-    //     return <div>
-    //         {cookies.modal !== "activo" ? <Redirect to='/' /> :
-    //             <div>
-    //                 <BreadCrumb />
-    //                 <Hero titulo="Servidores públicos en contrataciones" subtitulo="Sistema de los servidores públicos que intervengan en procedimientos de contrataciones públicas" link="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
-    //                 <Description descripcion={descripcion} />
-    //                 <div>Error: {error.message}</div>;
-    //             </div>
-    //         }
-    //     </div>
-    // } else if (!isLoaded) {
-    //     return <div>
-    //         {cookies.modal !== "activo" ? <Redirect to='/' /> :
-    //             <div>
-    //                 <BreadCrumb />
-    //                 <Hero titulo="Servidores públicos en contrataciones" subtitulo="Sistema de los servidores públicos que intervengan en procedimientos de contrataciones públicas" link="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
-    //                 <Description descripcion={descripcion} />
-    //                 <div>Cargando...</div>;
-    //             </div>
-    //         }
-    //     </div>
-    // } else {
-    //     return (
-    //         <div>
-    //             {cookies.modal !== "activo" ? <Redirect to='/' /> :
-    //                 <div>
-    //                     <BreadCrumb />
-    //                     <Hero titulo="Servidores públicos en contrataciones" subtitulo="Sistema de los servidores públicos que intervengan en procedimientos de contrataciones públicas" link="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
-    //                     <Description descripcion={descripcion} />
-    //                     <ul>
-    //                         {dependencias.map(dependencia => (
-    //                             <li key="{dependencia.id}">
-    //                                 {dependencia.name}
-    //                             </li>
-    //                         ))}
-    //                     </ul>
-    //                 </div>
-    //             }
-    //         </div>
-    //     );
-    // }
+    function TableServidores() {
+        if(resObj !== null){
+            return (
+                <TableContainer component={Paper}>
+                    <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                        <TableHead>
+                            <TableRow>
+                                <StyledTableCell>Nombre</StyledTableCell>
+                                <StyledTableCell align="center">Apellidos</StyledTableCell>
+                                <StyledTableCell align="center">Institución</StyledTableCell>
+                                <StyledTableCell align="center">Puesto</StyledTableCell>
+                            </TableRow>
+                        </TableHead>
+                        <TableBody>
+    
+                            {
+                            isLoaded ? 
+                            Object.entries(resObj).map(([key, value], i) => (
+    
+                                <StyledTableRow 
+                                    key={key}
+                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                >
+                                    <StyledTableCell component="th" scope="row">
+                                        {value.nombres}
+                                    </StyledTableCell>
+                                    <StyledTableCell align="left">{value.primerApellido + " " + value.segundoApellido}</StyledTableCell>
+                                    <StyledTableCell align="left">{value.institucionDependencia.nombre}</StyledTableCell>
+                                    <StyledTableCell align="left">{value.puesto.nombre}</StyledTableCell>
+                                </StyledTableRow >
+                            ))
+                            
+                            : <div>Cargando...</div>
+                            
+                            }
+                        </TableBody>
+                    </Table>
+                </TableContainer>
+            );
+        } else {
+            return <div>Cargando...</div>
+        }
+
+        
+    }
+
+    function _renderServidores() {
+
+        return Object.entries(resObj).map(([key, value], i) => {
+            return (
+                <div key={key}>
+                    id is: {value.id} ;
+                    name is: {value.nombres}
+                </div>
+            )
+        })
+    }
 
 
     return (
         <div>
             {cookies.modal !== "activo" ? <Redirect to='/' /> :
-                <div>
+                <div >
                     <BreadCrumb />
                     <Hero titulo="Servidores públicos en contrataciones" subtitulo="Sistema de los servidores públicos que intervengan en procedimientos de contrataciones públicas" link="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
                     <Description descripcion={descripcion} />
-                    {isLoaded ? <p>{dependencias}</p> : <div>{error}</div>}
+                    {/* {isLoaded ? <p>{respuesta}</p> : <div>{error}</div>} */}
+                    {isLoaded ? <Box sx={{ py: '5vh', mb: '2vh', mx: '10vw' }}>
+                        {TableServidores()}
+                    </Box> : <div>Cargando...</div>}
+
+
+
+
+                    {/* <ul>
+                        {respuesta.map(user => (
+                            <li key={user[0]}>{user[0]}</li>
+                        ))}
+                    </ul> */}
                 </div>
             }
         </div>
     );
 
-
-
-
-
-
-    // const [todos, setTodos] = useState([]);
-    // const url = 'http://132.226.123.35:8080/v1/spic'
-
-    // const myHeaders = new Headers();
-    // myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkdlTlQwazNuNjQkMnkkNCIsImp0aSI6IlA3NzBWYjE0Iiwic2NvcGUiOiJyZWFkICIsImlhdCI6MTYzNzU0OTMxNiwiZXhwIjoxNjM3NTQ5NjE2fQ.sIQlyfQINudGvmQyikc3B90yVZBuI5QwmGwLH7bsu7g");
-
-    // const requestOptions = {
-    //     method: 'POST',
-    //     headers: myHeaders,
-    //     redirect: 'follow'
-    // };
-
-    // const fetchApi = async () => {
-    //     const response = await fetch(url, requestOptions)
-    //     const responseJSON = await response.json()
-    //     setTodos(responseJSON)
-    //     console.log(responseJSON)
-    // }
-
-    // useEffect(() => {
-    //     fetchApi()
-    // })
-
-
-
-
-
-    // return (
-    //     <div>
-    //         {cookies.modal !== "activo" ? <Redirect to='/' /> :
-    //             <div>
-    //                 <BreadCrumb />
-    //                 <Hero titulo="Servidores públicos en contrataciones" subtitulo="Sistema de los servidores públicos que intervengan en procedimientos de contrataciones públicas" link="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
-    //                 <Description descripcion={descripcion} />
-    //             </div>
-    //         }
-    //     </div>
-    // );
 };
-export default Home;
+export default ServidoresContrataciones;
