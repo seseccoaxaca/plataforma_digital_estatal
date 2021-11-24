@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import BreadCrumb from '../../components/BreadCrumb';
 import Hero from '../../components/HeroPages';
 import Description from '../../components/Description';
+import Busqueda from '../../components/Busqueda';
 
 // 
 import { tableCellClasses, Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
@@ -201,6 +202,9 @@ const ServidoresContrataciones = () => {
                     <BreadCrumb />
                     <Hero titulo="Servidores públicos en contrataciones" subtitulo="Sistema de los servidores públicos que intervengan en procedimientos de contrataciones públicas" link="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
                     <Description descripcion={descripcion} />
+                    <Box sx={{ py: '5vh', mb: '2vh', mx: '10vw' }}>
+                        <Busqueda />
+                    </Box>
                     {/* {isLoaded ? <p>{respuesta}</p> : <div>{error}</div>} */}
                     {isLoaded ? <Box sx={{ py: '5vh', mb: '2vh', mx: '10vw' }}>
                         {TableServidores()}

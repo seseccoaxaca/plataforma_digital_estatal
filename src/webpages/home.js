@@ -9,6 +9,8 @@ import { Box} from '@mui/material';
 
 import { useCookies } from 'react-cookie';
 
+import CookieConsent from "react-cookie-consent";
+
 const Home = () => {
     const tit1 = "Plataforma Digital Estatal"
     const tit2 = "Mercado Digital Anticorrupción"
@@ -34,7 +36,7 @@ const Home = () => {
                 <SeccionVideo titulo={tit1} descripcion={desc1} video="https://www.youtube.com/embed/e9zZE5i8Vt4"/>
                 {/* <p>Este es el home</p> */}
                 <SeccionVideo titulo={tit2} descripcion={desc2} video="https://www.youtube.com/embed/JQNPwOOG4yw"/>
-                
+                <CookieConsent>Este sitio usa cookies, revisa nuestro términos y condiciones</CookieConsent>
             </Box>
         </div>
     );
