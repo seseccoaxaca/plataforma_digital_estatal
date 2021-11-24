@@ -19,7 +19,7 @@ export default function Footer() {
             description: ['Declaraciones', 'Servidores en contrataciones', 'Catálogos de empresas', 'Sancionados', 'Información y comunicación'],
         },
         {
-            title: 'Sistemas',
+            title: 'Servidores',
             description: ['Denuncias públicas','Contrataciones','Seguimiento','Indicadores'],
         },
         {

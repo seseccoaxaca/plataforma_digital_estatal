@@ -1,0 +1,504 @@
+{
+    "pagination": {
+        "hasNextPage": true,
+        "page": 1,
+        "pageSize": 10,
+        "totalRows": 38
+    },
+    "results": [
+        {
+            "id": "60c79ee6a71ede001a298c9b",
+            "institucionDependencia": {
+                "nombre": "PODER JUDICIAL DEL ESTADO DE OAXACA CONS DE LA JUD",
+                "clave": "301PJEOCJ",
+                "siglas": "CJO"
+            },
+            "puesto": {
+                "nombre": "DIRECT DE ADMINISTRACION",
+                "nivel": "21C"
+            },
+            "superiorInmediato": {
+                "puesto": {
+                    "nombre": "PRESIDENTE DEL CJO",
+                    "nivel": "25A"
+                },
+                "nombres": "EDUARDO",
+                "primerApellido": "PINACHO",
+                "segundoApellido": "SANCHEZ"
+            },
+            "ejercicioFiscal": "2020",
+            "nombres": "GUILLERMO",
+            "primerApellido": "TREJO",
+            "segundoApellido": "CARBAJAL",
+            "tipoArea": [
+                {
+                    "clave": "RC",
+                    "valor": "RESPONSABLE DE LA CONTRATACIÓN"
+                }
+            ],
+            "tipoProcedimiento": [
+                {
+                    "clave": 1,
+                    "valor": "CONTRATACIONES PÚBLICAS"
+                }
+            ],
+            "nivelResponsabilidad": [
+                {
+                    "clave": "R",
+                    "valor": "RESOLUCIÓN"
+                }
+            ],
+            "fechaCaptura": "2021-06-14T18:24:38+00:00",
+            "__v": 0
+        },
+        {
+            "id": "60c7a18da71ede001a298ca1",
+            "institucionDependencia": {
+                "nombre": "PODER JUDICIAL DEL ESTADO DE OAXACA CONS DE LA JUD",
+                "clave": "301PJEOCJ",
+                "siglas": "CJO"
+            },
+            "puesto": {
+                "nombre": "DIRETOR DE FINANZAS",
+                "nivel": "21C"
+            },
+            "superiorInmediato": {
+                "puesto": {
+                    "nombre": "PRESIDENTE DEL CJO",
+                    "nivel": "25A"
+                },
+                "nombres": "EDUARDO",
+                "primerApellido": "PINACHO",
+                "segundoApellido": "SANCHEZ"
+            },
+            "ejercicioFiscal": "2020",
+            "nombres": "ANDRES",
+            "primerApellido": "PACHECO",
+            "segundoApellido": "AGUILAR",
+            "tipoArea": [
+                {
+                    "clave": "RC",
+                    "valor": "RESPONSABLE DE LA CONTRATACIÓN"
+                }
+            ],
+            "tipoProcedimiento": [
+                {
+                    "clave": 1,
+                    "valor": "CONTRATACIONES PÚBLICAS"
+                }
+            ],
+            "nivelResponsabilidad": [
+                {
+                    "clave": "R",
+                    "valor": "RESOLUCIÓN"
+                }
+            ],
+            "fechaCaptura": "2021-06-14T18:35:57+00:00",
+            "__v": 0
+        },
+        {
+            "id": "60c7a43ca71ede001a298ca4",
+            "institucionDependencia": {
+                "nombre": "PODER JUDICIAL DEL ESTADO DE OAXACA CONS DE LA JUD",
+                "clave": "301PJEOCJ",
+                "siglas": "CJO"
+            },
+            "puesto": {
+                "nombre": "DIRECT DE CONTRALORIA INT",
+                "nivel": "21C"
+            },
+            "superiorInmediato": {
+                "puesto": {
+                    "nombre": "PRESIDENTE DEL CJO",
+                    "nivel": "25A"
+                },
+                "nombres": "EDUARDO",
+                "primerApellido": "PINACHO",
+                "segundoApellido": "SANCHEZ"
+            },
+            "ejercicioFiscal": "2020",
+            "nombres": "TRINIDAD",
+            "primerApellido": "CORONEL",
+            "segundoApellido": "VASQUEZ",
+            "tipoArea": [
+                {
+                    "clave": "RC",
+                    "valor": "RESPONSABLE DE LA CONTRATACIÓN"
+                }
+            ],
+            "tipoProcedimiento": [
+                {
+                    "clave": 1,
+                    "valor": "CONTRATACIONES PÚBLICAS"
+                }
+            ],
+            "nivelResponsabilidad": [
+                {
+                    "clave": "R",
+                    "valor": "RESOLUCIÓN"
+                }
+            ],
+            "fechaCaptura": "2021-06-14T18:47:24+00:00",
+            "__v": 0
+        },
+        {
+            "id": "60c7a66ca71ede001a298ca7",
+            "institucionDependencia": {
+                "nombre": "PODER JUDICIAL DEL ESTADO DE OAXACA CONS DE LA JUD",
+                "clave": "301PJEOCJ",
+                "siglas": "CJO"
+            },
+            "puesto": {
+                "nombre": "JEFA DE ENLACE Y VINCULAC",
+                "nivel": "17A"
+            },
+            "superiorInmediato": {
+                "puesto": {
+                    "nombre": "DIRECT DE ADMINISTRACION",
+                    "nivel": "21C"
+                },
+                "nombres": "GUILLERMO",
+                "primerApellido": "TREJO",
+                "segundoApellido": "CARBAJAL"
+            },
+            "ejercicioFiscal": "2020",
+            "nombres": "LADY MAYREL",
+            "primerApellido": "HERNANDEZ",
+            "segundoApellido": "VELASCO",
+            "tipoArea": [
+                {
+                    "clave": "RC",
+                    "valor": "RESPONSABLE DE LA CONTRATACIÓN"
+                }
+            ],
+            "tipoProcedimiento": [
+                {
+                    "clave": 1,
+                    "valor": "CONTRATACIONES PÚBLICAS"
+                }
+            ],
+            "nivelResponsabilidad": [
+                {
+                    "clave": "R",
+                    "valor": "RESOLUCIÓN"
+                }
+            ],
+            "fechaCaptura": "2021-06-14T18:56:44+00:00",
+            "__v": 0
+        },
+        {
+            "id": "60c7a95fa71ede001a298cb1",
+            "institucionDependencia": {
+                "nombre": "PODER JUDICIAL DEL ESTADO DE OAXACA CONS DE LA JUD",
+                "clave": "301PJEOCJ",
+                "siglas": "CJO"
+            },
+            "puesto": {
+                "nombre": "JU CONTA Y REND CUENT PUB",
+                "nivel": "18A"
+            },
+            "superiorInmediato": {
+                "puesto": {
+                    "nombre": "DIRECTOR DE FINANZAS",
+                    "nivel": "21C"
+                },
+                "nombres": "ANDRES",
+                "primerApellido": "PACHECO",
+                "segundoApellido": "AGUILAR"
+            },
+            "ejercicioFiscal": "2020",
+            "nombres": "HECTOR",
+            "primerApellido": "GUTIERREZ",
+            "segundoApellido": "FLORES",
+            "tipoArea": [
+                {
+                    "clave": "RC",
+                    "valor": "RESPONSABLE DE LA CONTRATACIÓN"
+                }
+            ],
+            "tipoProcedimiento": [
+                {
+                    "clave": 1,
+                    "valor": "CONTRATACIONES PÚBLICAS"
+                }
+            ],
+            "nivelResponsabilidad": [
+                {
+                    "clave": "R",
+                    "valor": "RESOLUCIÓN"
+                }
+            ],
+            "fechaCaptura": "2021-06-14T19:09:19+00:00",
+            "__v": 0
+        },
+        {
+            "id": "60c7a783a71ede001a298caa",
+            "institucionDependencia": {
+                "nombre": "PODER JUDICIAL DEL ESTADO DE OAXACA CONS DE LA JUD",
+                "clave": "301PJEOCJ",
+                "siglas": "CJO"
+            },
+            "puesto": {
+                "nombre": "JD DE PRESUPUESTACION",
+                "nivel": "17A"
+            },
+            "superiorInmediato": {
+                "puesto": {
+                    "nombre": "DIRECT DE PLAN E INFORM",
+                    "nivel": "21C"
+                },
+                "nombres": "HERMELINDA",
+                "primerApellido": "GRACIDA",
+                "segundoApellido": "ZARATE"
+            },
+            "__v": 0,
+            "ejercicioFiscal": "2020",
+            "fechaCaptura": "2021-06-14T19:10:08+00:00",
+            "nivelResponsabilidad": [
+                {
+                    "clave": "R",
+                    "valor": "RESOLUCIÓN"
+                }
+            ],
+            "nombres": "MAXIMINO HERACLIO",
+            "primerApellido": "HERNANDEZ",
+            "segundoApellido": "ROJAS",
+            "tipoArea": [
+                {
+                    "clave": "RC",
+                    "valor": "RESPONSABLE DE LA CONTRATACIÓN"
+                }
+            ],
+            "tipoProcedimiento": [
+                {
+                    "clave": 1,
+                    "valor": "CONTRATACIONES PÚBLICAS"
+                }
+            ]
+        },
+        {
+            "id": "60c7aacea71ede001a298cb8",
+            "institucionDependencia": {
+                "nombre": "PODER JUDICIAL DEL ESTADO DE OAXACA CONS DE LA JUD",
+                "clave": "301PJEOCJ",
+                "siglas": "CJO"
+            },
+            "puesto": {
+                "nombre": "JEFE DE DEPARTAMENTO",
+                "nivel": "17A"
+            },
+            "superiorInmediato": {
+                "puesto": {
+                    "nombre": "DIRECT DE CONTRALORIA INT",
+                    "nivel": "21C"
+                },
+                "nombres": "TRINIDAD",
+                "primerApellido": "CORONEL",
+                "segundoApellido": "VASQUEZ"
+            },
+            "__v": 0,
+            "ejercicioFiscal": "2020",
+            "fechaCaptura": "2021-06-14T19:16:09+00:00",
+            "nivelResponsabilidad": [
+                {
+                    "clave": "R",
+                    "valor": "RESOLUCIÓN"
+                }
+            ],
+            "nombres": "JORGE ",
+            "primerApellido": "PABLO",
+            "segundoApellido": "CASTELLANOS",
+            "tipoArea": [
+                {
+                    "clave": "RC",
+                    "valor": "RESPONSABLE DE LA CONTRATACIÓN"
+                }
+            ],
+            "tipoProcedimiento": [
+                {
+                    "clave": 1,
+                    "valor": "CONTRATACIONES PÚBLICAS"
+                }
+            ]
+        },
+        {
+            "id": "60dc934afbb09a001367e732",
+            "ramo": {
+                "clave": 28,
+                "valor": "PARTICIPACIONES A ENTIDADES FEDERATIVAS Y MUNICIPIOS"
+            },
+            "institucionDependencia": {
+                "nombre": "Instituto de Acceso a la Información Pública y Protección de Datos Personales",
+                "siglas": "IAIPOAXACA"
+            },
+            "puesto": {
+                "nombre": "Director de Administración",
+                "nivel": "Director"
+            },
+            "superiorInmediato": {
+                "puesto": {
+                    "nombre": "Comisionada Presidente",
+                    "nivel": "Comisionado Presidente"
+                },
+                "nombres": "María Antonieta",
+                "primerApellido": "Velasquez",
+                "segundoApellido": "Chagoya"
+            },
+            "ejercicioFiscal": "2021",
+            "nombres": "Fernando",
+            "primerApellido": "Cruz",
+            "segundoApellido": "Rios",
+            "tipoArea": [
+                {
+                    "clave": "C",
+                    "valor": "CONTRATANTE"
+                },
+                {
+                    "clave": "R",
+                    "valor": "REQUIRENTE"
+                },
+                {
+                    "clave": "RC",
+                    "valor": "RESPONSABLE DE LA CONTRATACIÓN"
+                },
+                {
+                    "clave": "RE",
+                    "valor": "RESPONSABLE DE LA EJECUCIÓN DE LOS TRABAJOS"
+                },
+                {
+                    "clave": "T",
+                    "valor": "TÉCNICA"
+                }
+            ],
+            "tipoProcedimiento": [
+                {
+                    "clave": 1,
+                    "valor": "CONTRATACIONES PÚBLICAS"
+                },
+                {
+                    "clave": 3,
+                    "valor": "ENAJENACIÓN DE BIENES MUEBLES"
+                }
+            ],
+            "nivelResponsabilidad": [
+                {
+                    "clave": "A",
+                    "valor": "ATENCIÓN"
+                },
+                {
+                    "clave": "R",
+                    "valor": "RESOLUCIÓN"
+                },
+                {
+                    "clave": "T",
+                    "valor": "TRAMITACIÓN"
+                }
+            ],
+            "fechaCaptura": "2021-06-30T15:52:42+00:00",
+            "__v": 0
+        },
+        {
+            "id": "60dc94b2fbb09a001367e735",
+            "ramo": {
+                "clave": 28,
+                "valor": "PARTICIPACIONES A ENTIDADES FEDERATIVAS Y MUNICIPIOS"
+            },
+            "institucionDependencia": {
+                "nombre": "Instituto de Acceso a la Información Pública y Protección de Datos Personales",
+                "siglas": "IAIPOAXACA"
+            },
+            "puesto": {
+                "nombre": "Director de Tecnologías de Transparencia",
+                "nivel": "Director"
+            },
+            "superiorInmediato": {
+                "puesto": {
+                    "nombre": "Comisionada Presidente",
+                    "nivel": "Comisionado Presidente"
+                },
+                "nombres": "María Antonieta",
+                "primerApellido": "Velásquez",
+                "segundoApellido": "Chagoya"
+            },
+            "__v": 0,
+            "ejercicioFiscal": "2021",
+            "fechaCaptura": "2021-06-30T16:03:06+00:00",
+            "nivelResponsabilidad": [
+                {
+                    "clave": "R",
+                    "valor": "RESOLUCIÓN"
+                }
+            ],
+            "nombres": "Edwin",
+            "primerApellido": "Robles",
+            "segundoApellido": "Hernandez",
+            "tipoArea": [
+                {
+                    "clave": "R",
+                    "valor": "REQUIRENTE"
+                },
+                {
+                    "clave": "T",
+                    "valor": "TÉCNICA"
+                }
+            ],
+            "tipoProcedimiento": [
+                {
+                    "clave": 1,
+                    "valor": "CONTRATACIONES PÚBLICAS"
+                },
+                {
+                    "clave": 3,
+                    "valor": "ENAJENACIÓN DE BIENES MUEBLES"
+                }
+            ]
+        },
+        {
+            "id": "60dc972cfbb09a001367e73a",
+            "ramo": {
+                "clave": 28,
+                "valor": "PARTICIPACIONES A ENTIDADES FEDERATIVAS Y MUNICIPIOS"
+            },
+            "institucionDependencia": {
+                "nombre": "Instituto de Acceso a la Información Pública y Protección de Datos Personales",
+                "siglas": "IAIPOAXACA"
+            },
+            "puesto": {
+                "nombre": "Directora de Capacitación Comunicación Evaluación Archivos y Datos Personales",
+                "nivel": "Director"
+            },
+            "superiorInmediato": {
+                "puesto": {
+                    "nombre": "Comisionada Presidente",
+                    "nivel": "Comisionado Presidente"
+                },
+                "nombres": "María Antonieta",
+                "primerApellido": "Velásquez",
+                "segundoApellido": "Chagoya"
+            },
+            "ejercicioFiscal": "2021",
+            "nombres": "Mildred Fabiola",
+            "primerApellido": "Estrada",
+            "segundoApellido": "Rubio",
+            "tipoArea": [
+                {
+                    "clave": "R",
+                    "valor": "REQUIRENTE"
+                },
+                {
+                    "clave": "T",
+                    "valor": "TÉCNICA"
+                }
+            ],
+            "tipoProcedimiento": [
+                {
+                    "clave": 1,
+                    "valor": "CONTRATACIONES PÚBLICAS"
+                }
+            ],
+            "nivelResponsabilidad": [],
+            "fechaCaptura": "2021-06-30T16:09:16+00:00",
+            "__v": 0
+        }
+    ]
+}
