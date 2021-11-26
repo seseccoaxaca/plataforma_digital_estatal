@@ -36,10 +36,6 @@ const BusquedaServidor = props => {
         nombres,
         apellidoUno,
         apellidoDos,
-        entities,
-        current_entity,
-        nivel,
-        changeLevel
     } = props;
 
     const limpiarBusqueda = () => {
