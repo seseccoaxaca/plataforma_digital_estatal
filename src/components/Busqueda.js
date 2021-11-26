@@ -40,7 +40,7 @@ const BusquedaServidor = props => {
         handleSetState,
         nombres,
         apellidoUno,
-        apellidoDos,S
+        apellidoDos,
     } = props;
 
     const limpiarBusqueda = () => {
