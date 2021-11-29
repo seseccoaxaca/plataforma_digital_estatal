@@ -9,23 +9,28 @@ import Button from '@material-ui/core/Button';
 
 const styles = theme => ({
     textField: {
+        marginLeft: theme.spacing.unit,
         marginRight: theme.spacing(1),
     },
     formControl: {
+        margin: theme.spacing.unit,
         width: '100%'
     },
-
     root: {
         flexGrow: 1,
         height: 250,
     },
     inputShrink: {
-        transform: `scale(1)`
+        fontSize: '0.9rem',
+        transform: `scale(1)`,
+       
     },
     button: {
+        backgroundColor: '#FEA142',
         margin: theme.spacing(2),
         marginRight: theme.spacing(1),
-    }
+    },
+
 });
 
 const BusquedaServidor = props => {
@@ -108,12 +113,12 @@ const BusquedaServidor = props => {
 
                 </Grid>
                 <Grid item xs={12} md={6} align="right">
-                    <Button variant="contained" color="secondary" className={classes.button}
+                    <Button variant="contained" color="Primary" className={classes.button}
                             onClick={() => limpiarBusqueda()}>
                         Limpiar
                     </Button>
 
-                    <Button variant="contained" color="secondary" className={classes.button} onClick={() => buscar()}>
+                    <Button variant="contained" color="Primary"  className={classes.button} onClick={() => buscar()}>
                         Buscar
                     </Button>
                 </Grid>
