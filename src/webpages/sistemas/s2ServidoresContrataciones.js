@@ -19,20 +19,51 @@ const qs = require("qs")
 const ServidoresContrataciones = () => {
     const [cookies, setCookie] = useCookies(['modal', 'token']);
     const [isLoaded, setIsLoaded] = useState(false);
-    // eslint-disable-next-line
     const [error, setError] = useState(null);
+    // eslint-disable-next-line
     const [respuesta, setRespuesta] = useState([]);
     const [resObj, setResObj] = useState(null);
 
 
-
-
     useEffect(() => {
-        function fetchData() {
+        let config = {}
 
-            let token = cookies.token.replace("Bearer_", "Bearer ");
+        if (cookies.token === undefined) {
+            const dataAuth = qs.stringify({
+                'client_id': 'Client_SEseCC$2y$4',
+                'grant_type': 'password',
+                'username': 'GeNT0k3n64$2y$4',
+                'password': '$3$ecCT0k3Ns',
+                'scope': 'read',
+                'client_secret': 'PassS3S3cc$2y$4'
+            });
 
-            const configPetition = {
+            config = {
+                method: 'post',
+                url: 'https://sesecc-pde.org.mx/oauth/token',  // http://132.226.123.35:9003/oauth/token
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                data: dataAuth
+            };
+
+            axios(config).then(function (response) {
+                let token = "Bearer_" + response.data.access_token;
+                setCookie("token", token, { path: '/', maxAge: 300 });
+                fetchData(token);
+            }).catch(function (error) {
+                setError(error);
+                console.log(error);
+            });
+        } else {
+            fetchData(cookies.token);
+        }
+
+        function fetchData(token) {
+
+            token = token.replace("Bearer_", "Bearer ");
+
+            config = {
                 method: 'post',
                 url: 'https://sesecc-pde.org.mx/v1/spic', // http://132.226.123.35:8080/v1/spic
                 headers: {
@@ -44,64 +75,24 @@ const ServidoresContrataciones = () => {
                 data: {
                     "pageSize": 38,
                 }
-
             }
 
-            axios(configPetition)
+            axios(config)
                 .then(function (response) {
                     let result = Object.entries(response.data.results);
                     setRespuesta(result);
-                    
                     setResObj(response.data.results);
-                    
-                    setIsLoaded(true);
                     console.log(response.data.results);
                 })
                 .catch(function (error) {
                     console.log(error);
                 });
-
         }
 
-        if (cookies.modal === 'activo' && cookies.token === undefined) {
+        setIsLoaded(true);
 
-            const dataAuth = qs.stringify({
-                'client_id': 'Client_SEseCC$2y$4',
-                'grant_type': 'password',
-                'username': 'GeNT0k3n64$2y$4',
-                'password': '$3$ecCT0k3Ns',
-                'scope': 'read',
-                'client_secret': 'PassS3S3cc$2y$4'
-            });
-
-            const configAuth = {
-                method: 'post',
-                url: 'https://sesecc-pde.org.mx/oauth/token',  // http://132.226.123.35:9003/oauth/token
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                data: dataAuth
-            };
-
-            axios(configAuth).then(function (response) {
-                let token = "Bearer_" + response.data.access_token;
-                setCookie("token", token, { path: '/', maxAge: 300 });
-                // window.alert("token: " + token);
-                fetchData();
-            }).catch(function (error) {
-                setError(error);
-                console.log(error);
-            });
-
-
-        } else {
-            setIsLoaded(true);
-            fetchData();
-        }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
-
-
 
     const descripcion = (
         <div>
@@ -117,27 +108,27 @@ const ServidoresContrataciones = () => {
 
     const StyledTableCell = styled(TableCell)(({ theme }) => ({
         [`&.${tableCellClasses.head}`]: {
-          backgroundColor: theme.palette.common.black,
-          color: theme.palette.common.white,
+            backgroundColor: theme.palette.common.black,
+            color: theme.palette.common.white,
         },
         [`&.${tableCellClasses.body}`]: {
-          fontSize: 14,
+            fontSize: 14,
         },
-      }));
-      
-      const StyledTableRow = styled(TableRow)(({ theme }) => ({
+    }));
+
+    const StyledTableRow = styled(TableRow)(({ theme }) => ({
         '&:nth-of-type(odd)': {
-          backgroundColor: theme.palette.action.hover,
+            backgroundColor: theme.palette.action.hover,
         },
         // hide last border
         '&:last-child td, &:last-child th': {
-          border: 0,
+            border: 0,
         },
-      }));
+    }));
 
 
     function TableServidores() {
-        if(resObj !== null){
+        if (resObj !== null) {
             return (
                 <TableContainer component={Paper}>
                     <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -150,36 +141,33 @@ const ServidoresContrataciones = () => {
                             </TableRow>
                         </TableHead>
                         <TableBody>
-    
                             {
-                            isLoaded ? 
-                            Object.entries(resObj).map(([key, value], i) => (
-    
-                                <StyledTableRow 
-                                    key={key}
-                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                                >
-                                    <StyledTableCell component="th" scope="row">
-                                        {value.nombres}
-                                    </StyledTableCell>
-                                    <StyledTableCell align="left">{value.primerApellido + " " + value.segundoApellido}</StyledTableCell>
-                                    <StyledTableCell align="left">{value.institucionDependencia.nombre}</StyledTableCell>
-                                    <StyledTableCell align="left">{value.puesto.nombre}</StyledTableCell>
-                                </StyledTableRow >
-                            ))
-                            
-                            : <div>Cargando...</div>
-                            
+                                isLoaded ?
+                                    Object.entries(resObj).map(([key, value], i) => (
+
+                                        <StyledTableRow
+                                            key={key}
+                                            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                        >
+                                            <StyledTableCell component="th" scope="row">
+                                                {value.nombres}
+                                            </StyledTableCell>
+                                            <StyledTableCell align="left">{value.primerApellido + " " + value.segundoApellido}</StyledTableCell>
+                                            <StyledTableCell align="left">{value.institucionDependencia.nombre}</StyledTableCell>
+                                            <StyledTableCell align="left">{value.puesto.nombre}</StyledTableCell>
+                                        </StyledTableRow >
+                                    ))
+                                    : <div>Cargando información</div>
                             }
                         </TableBody>
                     </Table>
                 </TableContainer>
             );
         } else {
-            return <div>Cargando...</div>
+            let isError;
+            error ? isError = <div>Ha ocurrido un error.</div> : isError = <div>Cargando información.</div>
+            return isError
         }
-
-        
     }
 
 
