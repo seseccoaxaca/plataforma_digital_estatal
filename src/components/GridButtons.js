@@ -84,8 +84,9 @@ const Sistemas = props => {
                       title="Sistema de evolución patrimonial, de declaración de intereses y constancia de presentación de declaración fiscal"
                       placement="top"
                   >
+
                       <Link
-                          to="/declaraciones"
+                          to="#"
                           className={classes.link}
                       >
                           <img
@@ -127,7 +128,7 @@ const Sistemas = props => {
                       placement="top"
                   >
                       <Link
-                          to="/declaraciones"
+                          to="#"
                           className={classes.link}
                       >
                           <img
@@ -148,7 +149,7 @@ const Sistemas = props => {
                       placement="top"
                   >
                       <Link
-                          to="/declaraciones"
+                          to="#"
                           className={classes.link}
                       >
                           <img
@@ -169,7 +170,7 @@ const Sistemas = props => {
                       placement="top"
                   >
                       <Link
-                          to="/declaraciones"
+                          to="#"
                           className={classes.link}
                       >
                           <img
@@ -190,7 +191,7 @@ const Sistemas = props => {
                       placement="top"
                   >
                       <Link
-                          to="/declaraciones"
+                          to="#"
                           className={classes.link}
                       >
                           <img
@@ -211,7 +212,7 @@ const Sistemas = props => {
                       placement="top"
                   >
                       <Link
-                          to="/sistemas/declaraciones"
+                          to="#"
                           className={classes.link}
                       >
                           <img
@@ -232,7 +233,7 @@ const Sistemas = props => {
                       placement="top"
                   >
                       <Link
-                          to="/sistemas/declaraciones"
+                          to="#"
                           className={classes.link}
                       >
                           <img
@@ -253,7 +254,7 @@ const Sistemas = props => {
                       placement="top"
                   >
                       <Link
-                          to="/declaraciones"
+                          to="#"
                           className={classes.link}
                       >
                           <img

@@ -182,18 +182,6 @@ const ServidoresContrataciones = () => {
         
     }
 
-    function _renderServidores() {
-
-        return Object.entries(resObj).map(([key, value], i) => {
-            return (
-                <div key={key}>
-                    id is: {value.id} ;
-                    name is: {value.nombres}
-                </div>
-            )
-        })
-    }
-
 
     return (
         <div>
@@ -205,19 +193,9 @@ const ServidoresContrataciones = () => {
                     <Box sx={{ py: '5vh', mb: '2vh', mx: '10vw' }}>
                         <Busqueda />
                     </Box>
-                    {/* {isLoaded ? <p>{respuesta}</p> : <div>{error}</div>} */}
                     {isLoaded ? <Box sx={{ py: '5vh', mb: '2vh', mx: '10vw' }}>
                         {TableServidores()}
                     </Box> : <div>Cargando...</div>}
-
-
-
-
-                    {/* <ul>
-                        {respuesta.map(user => (
-                            <li key={user[0]}>{user[0]}</li>
-                        ))}
-                    </ul> */}
                 </div>
             }
         </div>
