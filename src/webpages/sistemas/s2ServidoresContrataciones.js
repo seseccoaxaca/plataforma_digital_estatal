@@ -54,7 +54,6 @@ const ServidoresContrataciones = () => {
                 fetchData(token);
             }).catch(function (error) {
                 setError(error);
-                console.log(error);
             });
         } else {
             fetchData(cookies.token);
@@ -85,7 +84,7 @@ const ServidoresContrataciones = () => {
                     setResObj(response.data.results);
                 })
                 .catch(function (error) {
-                    console.log(error);
+                    setError(error);
                 });
         }
 
@@ -161,9 +160,16 @@ const ServidoresContrataciones = () => {
                     <BreadCrumb />
                     <Hero titulo="Servidores públicos en contrataciones" subtitulo="Sistema de los servidores públicos que intervengan en procedimientos de contrataciones públicas" link="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
                     <Description descripcion={descripcion} />
-                    {isLoaded ? <Box sx={{ py: '5vh', mb: '2vh', mx: '10vw' }}>
-                        {DataTable()}
-                    </Box> : <div>Cargando...</div>}
+                    { error === null ? 
+                    <div>
+                        {isLoaded ? 
+                            <Box sx={{ py: '5vh', mb: '2vh', mx: '10vw' }}>
+                                {DataTable()}
+                            </Box> : <div>Cargando...</div>
+                        }
+                    </div>
+                    : <div style={{color: "#fff", backgroundColor:"rgb(200,50,50)", textAlign: "center" }}> Error al cargar la información </div> 
+                    }   
                 </div>
             }
         </div>
