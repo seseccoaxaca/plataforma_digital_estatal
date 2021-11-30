@@ -111,7 +111,8 @@ const ServidoresContrataciones = () => {
         { field: 'nombre', headerName: 'Nombre(s)', flex: 0.5, },
         { field: 'apellidos', headerName: 'Apellido(s)', flex: 0.6, },
         { field: 'institucion', headerName: 'Institución', flex: 1.5,},
-        { field: 'puesto', headerName: 'Puesto', flex: 0.8,}
+        { field: 'puesto', headerName: 'Puesto', flex: 0.8,},
+        { field: 'responsabilidad', headerName: 'Responsabilidad', flex: 0.5,},
     ];
 
     const theme = createTheme(
@@ -125,9 +126,10 @@ const ServidoresContrataciones = () => {
 
         let rows = [];
         if (resObj !== null) {
+            console.log(resObj);
             if (isLoaded) {
                 Object.entries(resObj).map(([key, value], i) => (
-                    rows.push({ id: key, nombre: value.nombres, apellidos: value.primerApellido + " " + value.segundoApellido, institucion: value.institucionDependencia.nombre, puesto: value.puesto.nombre })
+                    rows.push({ id: key, nombre: value.nombres, apellidos: value.primerApellido + " " + value.segundoApellido, institucion: value.institucionDependencia.nombre, puesto: value.puesto.nombre, responsabilidad: value.nivelResponsabilidad.length > 0 ? value.nivelResponsabilidad[0].valor : " - " })
                 ))
             }
             return (
