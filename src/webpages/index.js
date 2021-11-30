@@ -22,6 +22,7 @@ import s6 from './sistemas/s6DenunciasPublicas';
 import s7 from './sistemas/s7Contrataciones';
 import s8 from './sistemas/s8Seguimiento';
 import s9 from './sistemas/s9Indicadores';
+import table from './sistemas/table_prueba';
 
 const Webpages = () => {
     return (
@@ -39,6 +40,8 @@ const Webpages = () => {
                 <Route path="/sistemas/contrataciones" component={s7} />
                 <Route path="/sistemas/seguimiento" component={s8} />
                 <Route path="/sistemas/indicadores" component={s9} />
+                <Route path="/sistemas/table_prueba" component={table} />
+                <Route exact path="/loaderio-7abcfac4bac461f6787a3bde94ff104e" render={() => <p>loaderio-7abcfac4bac461f6787a3bde94ff104e</p>} />
             </Layout>
         </Router>
     );
