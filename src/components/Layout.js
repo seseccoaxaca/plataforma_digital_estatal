@@ -5,20 +5,15 @@ import StickyFooter from './StickyFooter';
 
 
 const Layout = ({ children }) => {
-    console.log(children);
-    return (<React.Fragment>
-        <main>{children}</main>
-    </React.Fragment>
-        
+    return (
+        <React.Fragment>
+            <Header />
+            <div className="navigationWrapper">
+                <main>{children}</main>
+            </div>
+            <Footer />
+            <StickyFooter />
+        </React.Fragment>
     )
 };
 export default Layout;
-
-// <React.Fragment>
-//             <Header />
-//                 <div className="navigationWrapper">
-//                     <main>{children}</main>
-//                 </div>
-//             <Footer />
-//             <StickyFooter />
-//         </React.Fragment>

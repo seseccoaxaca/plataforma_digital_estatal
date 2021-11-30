@@ -41,7 +41,6 @@ const Webpages = () => {
                 <Route path="/sistemas/seguimiento" component={s8} />
                 <Route path="/sistemas/indicadores" component={s9} />
                 <Route path="/sistemas/table_prueba" component={table} />
-                <Route path="/loaderio-7abcfac4bac461f6787a3bde94ff104e/" render={() => <p>loaderio-7abcfac4bac461f6787a3bde94ff104e</p>} />
             </Layout>
         </Router>
     );
