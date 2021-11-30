@@ -32,7 +32,7 @@ export default function MenuAppBar() {
           <Stack direction="row" spacing={2}>
             <Button component={Link} to="/" color="inherit" startIcon={<HomeIcon />}>Inicio</Button>  
             <Button color="inherit" component={Link} to="/mesa-ayuda" startIcon={<HelpIcon />}>Mesa de ayuda</Button>
-            <Button color="inherit" component={Link} to="/blog" startIcon={<FileCopyIcon />}>Blog</Button>
+            <Button color="inherit" target="_blank" href="https://blog-plataforma-digital-estatal.vercel.app/" startIcon={<FileCopyIcon />}>Blog</Button>
             <Button color="inherit" component={Link} to="/calidad-datos" startIcon={<SearchIcon />}>Calidad de datos</Button>
             
             {!isAuthenticated ? (
