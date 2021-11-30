@@ -3,12 +3,11 @@ import React, { useEffect, useState } from 'react';
 import BreadCrumb from '../../components/BreadCrumb';
 import Hero from '../../components/HeroPages';
 import Description from '../../components/Description';
-import Busqueda from '../../components/Busqueda';
 
-// 
-import { tableCellClasses, Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
-import { styled } from '@mui/material/styles';
-//
+import { Box } from '@mui/material';
+import { DataGrid, GridToolbar, esES } from '@mui/x-data-grid';
+import { esES as coreesES } from '@mui/material/locale';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import { useCookies } from 'react-cookie';
 import { Redirect } from 'react-router-dom';
@@ -19,10 +18,12 @@ const qs = require("qs")
 const ServidoresContrataciones = () => {
     const [cookies, setCookie] = useCookies(['modal', 'token']);
     const [isLoaded, setIsLoaded] = useState(false);
+    // eslint-disable-next-line
     const [error, setError] = useState(null);
     // eslint-disable-next-line
     const [respuesta, setRespuesta] = useState([]);
     const [resObj, setResObj] = useState(null);
+    const [pageSize, setPageSize] = useState(10);
 
 
     useEffect(() => {
@@ -82,7 +83,7 @@ const ServidoresContrataciones = () => {
                     let result = Object.entries(response.data.results);
                     setRespuesta(result);
                     setResObj(response.data.results);
-                    console.log(response.data.results);
+                    // console.log(response.data.results);
                 })
                 .catch(function (error) {
                     console.log(error);
@@ -105,70 +106,52 @@ const ServidoresContrataciones = () => {
         </div>
     );
 
+    const columns = [
+        { field: 'id', headerName: 'ID', type: 'number', width: 80, hide: true},
+        { field: 'nombre', headerName: 'Nombre(s)', flex: 0.5, },
+        { field: 'apellidos', headerName: 'Apellido(s)', flex: 0.6, },
+        { field: 'institucion', headerName: 'Institución', flex: 1.5,},
+        { field: 'puesto', headerName: 'Puesto', flex: 0.8,}
+    ];
 
-    const StyledTableCell = styled(TableCell)(({ theme }) => ({
-        [`&.${tableCellClasses.head}`]: {
-            backgroundColor: theme.palette.common.black,
-            color: theme.palette.common.white,
-        },
-        [`&.${tableCellClasses.body}`]: {
-            fontSize: 14,
-        },
-    }));
-
-    const StyledTableRow = styled(TableRow)(({ theme }) => ({
-        '&:nth-of-type(odd)': {
-            backgroundColor: theme.palette.action.hover,
-        },
-        // hide last border
-        '&:last-child td, &:last-child th': {
-            border: 0,
-        },
-    }));
+    const theme = createTheme(
+        esES,
+        coreesES,
+    );
 
 
-    function TableServidores() {
+
+    function DataTable() {
+
+        let rows = [];
         if (resObj !== null) {
+            if (isLoaded) {
+                Object.entries(resObj).map(([key, value], i) => (
+                    rows.push({ id: key, nombre: value.nombres, apellidos: value.primerApellido + " " + value.segundoApellido, institucion: value.institucionDependencia.nombre, puesto: value.puesto.nombre })
+                ))
+            }
             return (
-                <TableContainer component={Paper}>
-                    <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                        <TableHead>
-                            <TableRow>
-                                <StyledTableCell>Nombre</StyledTableCell>
-                                <StyledTableCell align="center">Apellidos</StyledTableCell>
-                                <StyledTableCell align="center">Institución</StyledTableCell>
-                                <StyledTableCell align="center">Puesto</StyledTableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {
-                                isLoaded ?
-                                    Object.entries(resObj).map(([key, value], i) => (
-
-                                        <StyledTableRow
-                                            key={key}
-                                            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                                        >
-                                            <StyledTableCell component="th" scope="row">
-                                                {value.nombres}
-                                            </StyledTableCell>
-                                            <StyledTableCell align="left">{value.primerApellido + " " + value.segundoApellido}</StyledTableCell>
-                                            <StyledTableCell align="left">{value.institucionDependencia.nombre}</StyledTableCell>
-                                            <StyledTableCell align="left">{value.puesto.nombre}</StyledTableCell>
-                                        </StyledTableRow >
-                                    ))
-                                    : <div>Cargando información</div>
-                            }
-                        </TableBody>
-                    </Table>
-                </TableContainer>
+                <div style={{ height: 500, width: '100%' }}>
+                    <ThemeProvider theme={theme}>
+                        {isLoaded ? <DataGrid
+                            rows={rows}
+                            columns={columns}
+                            pageSize={pageSize}
+                            onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
+                            rowsPerPageOptions={[10, 20]}
+                            pagination
+                            checkboxSelection
+                            components={{
+                                Toolbar: GridToolbar,
+                            }}
+                        />
+                            : <div>Cargando información</div>}
+                    </ThemeProvider>
+                </div>
             );
-        } else {
-            let isError;
-            error ? isError = <div>Ha ocurrido un error.</div> : isError = <div>Cargando información.</div>
-            return isError
         }
     }
+    
 
 
     return (
@@ -178,11 +161,8 @@ const ServidoresContrataciones = () => {
                     <BreadCrumb />
                     <Hero titulo="Servidores públicos en contrataciones" subtitulo="Sistema de los servidores públicos que intervengan en procedimientos de contrataciones públicas" link="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
                     <Description descripcion={descripcion} />
-                    <Box sx={{ py: '5vh', mb: '2vh', mx: '10vw' }}>
-                        <Busqueda />
-                    </Box>
                     {isLoaded ? <Box sx={{ py: '5vh', mb: '2vh', mx: '10vw' }}>
-                        {TableServidores()}
+                        {DataTable()}
                     </Box> : <div>Cargando...</div>}
                 </div>
             }

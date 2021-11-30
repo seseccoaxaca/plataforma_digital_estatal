@@ -20,7 +20,7 @@ ReactDOM.render(
       <CookiesProvider>
         <App />
       </CookiesProvider>
-    </Auth0Provider>,
+    </Auth0Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
