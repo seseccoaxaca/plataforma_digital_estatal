@@ -83,7 +83,6 @@ const ServidoresContrataciones = () => {
                     let result = Object.entries(response.data.results);
                     setRespuesta(result);
                     setResObj(response.data.results);
-                    // console.log(response.data.results);
                 })
                 .catch(function (error) {
                     console.log(error);
@@ -126,7 +125,6 @@ const ServidoresContrataciones = () => {
 
         let rows = [];
         if (resObj !== null) {
-            console.log(resObj);
             if (isLoaded) {
                 Object.entries(resObj).map(([key, value], i) => (
                     rows.push({ id: key, nombre: value.nombres, apellidos: value.primerApellido + " " + value.segundoApellido, institucion: value.institucionDependencia.nombre, puesto: value.puesto.nombre, responsabilidad: value.nivelResponsabilidad.length > 0 ? value.nivelResponsabilidad[0].valor : " - " })
