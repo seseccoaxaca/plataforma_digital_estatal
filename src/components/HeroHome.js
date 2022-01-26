@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 
 
@@ -21,7 +21,10 @@ export default function MenuAppBar(props) {
                 fontSize: "4rem",
             }}
         >
-            {titulo}
+            <div sx={{ padding: "2em"}}>
+                {titulo}
+            </div>
+            
         </Box>
     );
 }

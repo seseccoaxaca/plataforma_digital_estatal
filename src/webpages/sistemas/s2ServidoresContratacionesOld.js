@@ -13,8 +13,6 @@ import { useCookies } from 'react-cookie';
 import { Redirect } from 'react-router-dom';
 import axios from 'axios';
 
-import { useDemoData } from '@mui/x-data-grid-generator';
-
 const qs = require("qs")
 
 const ServidoresContrataciones = () => {
@@ -107,12 +105,12 @@ const ServidoresContrataciones = () => {
     );
 
     const columns = [
-        { field: 'id', headerName: 'ID', type: 'number', width: 90, hide: true},  
-        { field: 'nombre', headerName: 'Nombre(s)', width: 150 }, // flex: 0.5,
-        { field: 'apellidos', headerName: 'Apellido(s)', width: 180 }, // flex: 0.6,
-        { field: 'institucion', headerName: 'Institución', width: 550 }, // flex: 1.5,
-        { field: 'puesto', headerName: 'Puesto', width: 400 }, // flex: 0.8,
-        { field: 'responsabilidad', headerName: 'Responsabilidad', width: 150}, // flex: 0.5,
+        { field: 'id', headerName: 'ID', type: 'number', width: 80, hide: true},
+        { field: 'nombre', headerName: 'Nombre(s)', flex: 0.5, },
+        { field: 'apellidos', headerName: 'Apellido(s)', flex: 0.6, },
+        { field: 'institucion', headerName: 'Institución', flex: 1.5,},
+        { field: 'puesto', headerName: 'Puesto', flex: 0.8,},
+        { field: 'responsabilidad', headerName: 'Responsabilidad', flex: 0.5,},
     ];
 
     const theme = createTheme(
@@ -120,12 +118,6 @@ const ServidoresContrataciones = () => {
         coreesES,
     );
 
-    const { data } = useDemoData({
-        dataSet: 'Commodity',
-        rowLength: 5,
-        maxColumns: 6,
-        // {...data}
-    });
 
 
     function DataTable() {
@@ -137,30 +129,25 @@ const ServidoresContrataciones = () => {
                     rows.push({ id: key, nombre: value.nombres, apellidos: value.primerApellido + " " + value.segundoApellido, institucion: value.institucionDependencia.nombre, puesto: value.puesto.nombre, responsabilidad: value.nivelResponsabilidad.length > 0 ? value.nivelResponsabilidad[0].valor : " - " })
                 ))
             }
-
-            
-
             return (
                 <div style={{ height: 500, width: '100%' }}>
                     <ThemeProvider theme={theme}>
-                        {isLoaded ? <DataGrid  
-                                rows={rows}
-                                columns={columns}
-                                pageSize={pageSize}
-                                onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
-                                rowsPerPageOptions={[10, 20]}
-                                pagination
-                                checkboxSelection
-                                components={{
-                                    Toolbar: GridToolbar,
-                                }}
-                            />
-                        : <div>Cargando información</div>}
+                        {isLoaded ? <DataGrid
+                            rows={rows}
+                            columns={columns}
+                            pageSize={pageSize}
+                            onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
+                            rowsPerPageOptions={[10, 20]}
+                            pagination
+                            checkboxSelection
+                            components={{
+                                Toolbar: GridToolbar,
+                            }}
+                        />
+                            : <div>Cargando información</div>}
                     </ThemeProvider>
-                    
                 </div>
             );
-
         }
     }
     
