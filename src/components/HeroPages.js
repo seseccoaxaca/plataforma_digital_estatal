@@ -9,7 +9,7 @@ export default function MenuAppBar(props) {
         <Box
             sx={{
                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(${link})`,
-                height: "50vh",
+                height: "60vh ",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",

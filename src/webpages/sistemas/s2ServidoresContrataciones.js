@@ -13,8 +13,6 @@ import { useCookies } from 'react-cookie';
 import { Redirect } from 'react-router-dom';
 import axios from 'axios';
 
-import { useDemoData } from '@mui/x-data-grid-generator';
-
 const qs = require("qs")
 
 const ServidoresContrataciones = () => {
@@ -119,13 +117,6 @@ const ServidoresContrataciones = () => {
         esES,
         coreesES,
     );
-
-    const { data } = useDemoData({
-        dataSet: 'Commodity',
-        rowLength: 5,
-        maxColumns: 6,
-        // {...data}
-    });
 
 
     function DataTable() {

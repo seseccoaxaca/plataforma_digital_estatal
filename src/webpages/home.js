@@ -35,7 +35,7 @@ const Home = () => {
                 
                 <SeccionVideo titulo={tit1} descripcion={desc1} video="https://www.youtube.com/embed/e9zZE5i8Vt4"/>
                 {/* <p>Este es el home</p> */}
-                <SeccionVideo titulo={tit2} descripcion={desc2} video="https://www.youtube.com/embed/JQNPwOOG4yw"/>
+                <SeccionVideo titulo={tit2} descripcion={desc2} video="https://www.youtube.com/embed/W3gJLf6n6ak"/>
                 <CookieConsent buttonText="Entendido">Este sitio usa cookies, revisa nuestro aviso de privacidad para <a rel="noopener" rel="noreferrer"  target="_blank" href="https://drive.google.com/file/d/1XnECmFSTvScLkJ_4a5vRcdRxVTK5ansB/view?usp=sharing" style={{color:"#AEB5CA"}}> más información.</a>
                 </CookieConsent>
             </Box>

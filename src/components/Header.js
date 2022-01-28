@@ -71,11 +71,24 @@ const ResponsiveAppBar = () => {
                 // display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem>
+                  <Button component={Link} to="/" color="inherit" startIcon={<HomeIcon />}>Inicio</Button>  
                 </MenuItem>
-              ))}
+                <MenuItem>
+                  <Button color="inherit" component={Link} to="/mesa-ayuda" startIcon={<HelpIcon />}>Mesa de ayuda</Button>
+                </MenuItem>
+                <MenuItem>
+                  <Button color="inherit" target="_blank" href="https://blog-plataforma-digital-estatal.vercel.app/" startIcon={<FileCopyIcon />}>Blog</Button>
+                </MenuItem>
+                <MenuItem>
+                  <Button color="inherit" component={Link} to="/calidad-datos" startIcon={<SearchIcon />}>Calidad de datos</Button>
+                </MenuItem>
+                <MenuItem>
+                  {!isAuthenticated ? (
+                    <Button color="inherit" onClick={()=>{loginWithRedirect()}} startIcon={<PeopleAltIcon />}>Iniciar Sesión</Button>
+                  ) : <Button color="inherit" onClick={() => {logout()}} startIcon={<VerifiedUserIcon />}>{user.name}</Button>}
+                
+                </MenuItem>
             </Menu>
           </Box>
 

@@ -21,9 +21,18 @@ export default function MenuAppBar(props) {
                 fontSize: "4rem",
             }}
         >
-            <div sx={{ padding: "2em"}}>
+            {/* <div sx={{ padding: "2em"}}>
+                titulo
+            </div> */}
+            <Typography
+                variant="h3"
+                component="h2"
+                sx={{
+                    textAlign: 'center'
+                }}
+            >
                 {titulo}
-            </div>
+            </Typography>
             
         </Box>
     );
